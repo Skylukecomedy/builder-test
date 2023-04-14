@@ -123,11 +123,14 @@ function meetsRequirements(stats, gear) {
     // find the gear id that meets the minimum requirements
     const suitableGear = [];
   for (const item of gear) {
-    const totalStats = calculateTotalStats(baseStats, [item]);
-    if (meetsRequirements(totalStats)) {
-      suitableGear.push(item);
-    }
+    const allGearCombos = generateGearCombos(gear);
+for (const combo of allGearCombos) {
+  const totalStats = calculateTotalStats(baseStats, combo);
+  if (meetsRequirements(totalStats)) {
+    suitableGear.push(combo);
   }
+}
+
 
     // display the result on the page
     const resultElement = document.getElementById('result');
