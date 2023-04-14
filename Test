@@ -5,6 +5,10 @@
 
 <body>
 
+<label for="strength-input">Minimum Strength:</label>
+<input type="number" id="strength-input" value="12">
+<button id="search-button">Search Gear</button>
+
 <button id="search-button">Search Gear</button>
 
   <button onclick="findGear()">Find Gear</button>
@@ -14,14 +18,18 @@
 
 
 <script>
-// desired final stats after equipping gear
-const desiredStats = {
-  strength: 12,
-  speed: 14,
-  shooting: 15,
-  passing: 10,
-  technique: 18
-};
+
+// function to get the desired stats object with updated strength value
+function getDesiredStats() {
+  const strength = Number(document.getElementById('strength-input').value);
+  return {
+    strength,
+    speed: 14,
+    shooting: 15,
+    passing: 10,
+    technique: 18
+  };
+}
 
 // function to check if the character meets the desired final stats after equipping gear
 function meetsRequirements(stats, gear) {
