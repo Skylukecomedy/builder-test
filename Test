@@ -1,3 +1,6 @@
+Code to adjust minimum strength speed shooting passing and technique desired
+
+
 <html>
 <head>
 
@@ -11,9 +14,7 @@
 <label for="speed-input">Minimum Speed:</label>
 <input type="number" id="speed-input" value="12">
 
-  <button onclick="findGear(true)">Find Gear (Base Stat 2)</button>
-   <button onclick="findGear(false)">Find Gear (Base Stat 1)</button>
-
+  <button onclick="findGear()">Find Gear</button>
   <p id="result"></p>
 </body>
 
@@ -24,12 +25,10 @@
 // function to get the desired stats object with updated strength value
 function getDesiredStats() {
   const strength = Number(document.getElementById('strength-input').value);
-  const speed = Number(document.getElementById('speed-input').value);
- 
   return {
     strength,
-    speed,
-    shooting: 3,
+    speed: 14,
+    shooting: 15,
     passing: 10,
     technique: 18
   };
@@ -47,25 +46,14 @@ function meetsRequirements(stats, gear) {
 }
 
 
-  function findGear(useBaseStat2) {
-  let baseStats;
-  if (useBaseStat2) {
-    baseStats = {
-      strength: 11,
-      speed: 11,
-      shooting: 10,
-      passing: 14,
-      technique: 17
-    };
-  } else {
-    baseStats = {
+  function findGear() {
+    const baseStats = {
       strength: 11,
       speed: 12,
       shooting: 14,
       passing: 10,
       technique: 16
     };
-  }
 
     const gear = [
       {
@@ -115,31 +103,27 @@ function meetsRequirements(stats, gear) {
     // function to check if the character meets the minimum requirements
     function meetsRequirements(stats) {
   const strengthReq = document.getElementById('strength-input').value;
-  const speedReq = document.getElementById('speed-input').value;
-  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 3 && stats.passing >= 1 && stats.technique >= 1;
+  return stats.strength >= strengthReq && stats.shooting >= 13;
 }
 
     // find the gear id that meets the minimum requirements
-    const suitableGear = [];
-  for (const item of gear) {
-    const totalStats = calculateTotalStats(baseStats, [item]);
-    if (meetsRequirements(totalStats)) {
-      suitableGear.push(item);
+    let gearId = null;
+    for (const item of gear) {
+      const totalStats = calculateTotalStats(baseStats, [item]);
+      if (meetsRequirements(totalStats)) {
+        gearId = item.id;
+        break;
+      }
     }
-  }
-
-return suitableGear;
-}
 
     // display the result on the page
     const resultElement = document.getElementById('result');
-  if (suitableGear.length > 0) {
-    const gearList = suitableGear.map(item => `${item.name} (ID: ${item.id})`).join(', ');
-    resultElement.textContent = `Suitable gear: ${gearList}`;
-  } else {
-    resultElement.textContent = 'No suitable gear found';
+    if (gearId !== null) {
+      resultElement.textContent = `Gear ID: ${gearId}`;
+    } else {
+      resultElement.textContent = 'No suitable gear found';
+    }
   }
-}
 </script>
 
 
