@@ -121,23 +121,23 @@ function meetsRequirements(stats, gear) {
 }
 
     // find the gear id that meets the minimum requirements
-    let gearId = null;
-    for (const item of gear) {
-      const totalStats = calculateTotalStats(baseStats, [item]);
-      if (meetsRequirements(totalStats)) {
-        gearId = item.id;
-        break;
-      }
+    const suitableGear = [];
+  for (const item of gear) {
+    const totalStats = calculateTotalStats(baseStats, [item]);
+    if (meetsRequirements(totalStats)) {
+      suitableGear.push(item);
     }
+  }
 
     // display the result on the page
     const resultElement = document.getElementById('result');
-    if (gearId !== null) {
-      resultElement.textContent = `Gear ID: ${gearId}`;
-    } else {
-      resultElement.textContent = 'No suitable gear found';
-    }
+  if (suitableGear.length > 0) {
+    const gearList = suitableGear.map(item => `${item.name} (ID: ${item.id})`).join(', ');
+    resultElement.textContent = `Suitable gear: ${gearList}`;
+  } else {
+    resultElement.textContent = 'No suitable gear found';
   }
+}
 </script>
 
 
