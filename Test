@@ -123,14 +123,11 @@ function meetsRequirements(stats, gear) {
     // find the gear id that meets the minimum requirements
     const suitableGear = [];
   for (const item of gear) {
-    const allGearCombos = generateGearCombos(gear);
-for (const combo of allGearCombos) {
-  const totalStats = calculateTotalStats(baseStats, combo);
-  if (meetsRequirements(totalStats)) {
-    suitableGear.push(combo);
+    const totalStats = calculateTotalStats(baseStats, [item]);
+    if (meetsRequirements(totalStats)) {
+      suitableGear.push(item);
+    }
   }
-}
-
 
     // display the result on the page
     const resultElement = document.getElementById('result');
@@ -141,38 +138,6 @@ for (const combo of allGearCombos) {
     resultElement.textContent = 'No suitable gear found';
   }
 }
-function generateGearCombos(gear) {
-  // Generate all possible combinations of gear (excluding the empty combo)
-  const gearCombos = [];
-  for (let i = 1; i <= gear.length; i++) {
-    const combos = k_combinations(gear, i);
-    gearCombos.push(...combos);
-  }
-
-  return gearCombos;
-}
-
-function k_combinations(set, k) {
-  const combos = [];
-
-  function backtrack(start, current) {
-    if (current.length === k) {
-      combos.push(current.slice());
-      return;
-    }
-
-    for (let i = start; i < set.length; i++) {
-      current.push(set[i]);
-      backtrack(i + 1, current);
-      current.pop();
-    }
-  }
-
-  backtrack(0, []);
-  return combos;
-}
-
-
 </script>
 
 
