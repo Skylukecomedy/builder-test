@@ -15,6 +15,8 @@
   <p id="result"></p>
 </body>
 
+
+
 <script>
 
 // function to get the desired stats object with updated strength value
@@ -32,8 +34,8 @@ function getDesiredStats() {
 }
 
 // function to check if the character meets the desired final stats after equipping gear
-function meetsRequirements(stats, desiredStats) {
-  const totalStats = calculateTotalStats(stats, []);
+function meetsRequirements(stats, gear) {
+  const totalStats = calculateTotalStats(stats, gear);
   for (const [stat, value] of Object.entries(desiredStats)) {
     if (totalStats[stat] < value) {
       return false;
@@ -42,107 +44,88 @@ function meetsRequirements(stats, desiredStats) {
   return true;
 }
 
-function findGear() {
-  const baseStats = {
-    strength: 11,
-    speed: 12,
-    shooting: 14,
-    passing: 10,
-    technique: 16
-  };
-  const baseStats2 = {
-    strength: 13,
-    speed: 14,
-    shooting: 12,
-    passing: 11,
-    technique: 10
-  };
 
-  const gear = [
-    {
-      name: 'Muscle Helmet',
-      id: 1,
-      type: 'head',
-      stats: {
-        strength: 2,
-        technique: -2
-      }
-    },
-    {
-      name: 'Turbo Helmet',
-      id: 2,
-      type: 'head',
-      stats: {
-        speed: 2,
-        technique: -2
-      }
-    },
-    {
-      name: 'Cannon Visor',
-      id: 3,
-      type: 'head',
-      stats: {
-        shooting: 2,
-        technique: -2
-      }
-    }
-  ];
+  function findGear() {
+    const baseStats = {
+      strength: 11,
+      speed: 12,
+      shooting: 14,
+      passing: 10,
+      technique: 16
+    };
 
-  // function to calculate the total stats of a character with given gear
-  function calculateTotalStats(stats, gear) {
-    let totalStats = { ...stats }; // make a copy of the original stats
-    for (const item of gear) {
-      if (item.stats) {
-        // if the item has stats
-        for (const [stat, value] of Object.entries(item.stats)) {
-          // add or subtract the stat value based on the gear
-          totalStats[stat] += value;
+    const gear = [
+      {
+        name: 'Muscle Helmet',
+        id: 1,
+        type: 'head',
+        stats: {
+          strength: 2,
+          technique: -2
+        }
+      },
+      {
+        name: 'Turbo Helmet',
+        id: 2,
+        type: 'head',
+        stats: {
+          speed: 2,
+          technique: -2
+        }
+      },
+      {
+        name: 'Cannon Visor',
+        id: 3,
+        type: 'head',
+        stats: {
+          shooting: 2,
+          technique: -2
         }
       }
+    ];
+
+    // function to calculate the total stats of a character with given gear
+    function calculateTotalStats(stats, gear) {
+      let totalStats = { ...stats }; // make a copy of the original stats
+      for (const item of gear) {
+        if (item.stats) {
+          // if the item has stats
+          for (const [stat, value] of Object.entries(item.stats)) {
+            // add or subtract the stat value based on the gear
+            totalStats[stat] += value;
+          }
+        }
+      }
+      return totalStats;
     }
-    return totalStats;
+
+    // function to check if the character meets the minimum requirements
+    function meetsRequirements(stats) {
+  const strengthReq = document.getElementById('strength-input').value;
+  const speedReq = document.getElementById('speed-input').value;
+  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 13;
+
+}
+
+    // find the gear id that meets the minimum requirements
+    let gearId = null;
+    for (const item of gear) {
+      const totalStats = calculateTotalStats(baseStats, [item]);
+      if (meetsRequirements(totalStats)) {
+        gearId = item.id;
+        break;
+      }
+    }
+
+    // display the result on the page
+    const resultElement = document.getElementById('result');
+    if (gearId !== null) {
+      resultElement.textContent = `Gear ID: ${gearId}`;
+    } else {
+      resultElement.textContent = 'No suitable gear found';
+    }
   }
-
-  // function to check if the character meets the minimum requirements
-  function meetsRequirements(stats, desiredStats) {
-    const strengthReq = document.getElementById('strength-input').value;
-    const speedReq = document.getElementById('speed-input').value;
-    return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= desiredStats.shooting && stats.passing >= desiredStats.passing && stats.technique >= desiredStats.technique;
-}
-
-// find the gear id that meets the minimum requirements
-let gearId = null;
-for (const item of gear) {
-const totalStats = calculateTotalStats(baseStats, [item]);
-if (meetsRequirements(totalStats, getDesiredStats())) {
-gearId = item.id;
-break;
-}
-}
-
-let gearId2 = null;
-for (const item of gear) {
-const totalStats = calculateTotalStats(baseStats2, [item]);
-if (meetsRequirements(totalStats, getDesiredStats())) {
-gearId2 = item.id;
-break;
-}
-}
-
-// display the result on the page
-const resultElement = document.getElementById('result');
-if (gearId !== null) {
-resultElement.textContent = `Gear ID for Character 1: ${gearId}`;
-
-resultElement.textContent += `Gear ID for Character 2: ${gearId2}`;
-
-}
-
-if (gearId2 !== null) {
-resultElement.textContent += Gear ID for Character 2: ${gearId2};
-} else {
-resultElement.textContent += ' No suitable gear found for Character 2';
-
-}
 </script>
+
+
 </html>
