@@ -11,7 +11,9 @@
 <label for="speed-input">Minimum Speed:</label>
 <input type="number" id="speed-input" value="12">
 
-  <button onclick="findGear()">Find Gear</button>
+  <button onclick="findGear(true)">Find Gear (Base Stat 2)</button>
+   <button onclick="findGear(false)">Find Gear (Base Stat 1)</button>
+
   <p id="result"></p>
 </body>
 
@@ -45,14 +47,25 @@ function meetsRequirements(stats, gear) {
 }
 
 
-  function findGear() {
-    const baseStats = {
+  function findGear(useBaseStat2) {
+  let baseStats;
+  if (useBaseStat2) {
+    baseStats = {
+      strength: 9,
+      speed: 14,
+      shooting: 16,
+      passing: 12,
+      technique: 18
+    };
+  } else {
+    baseStats = {
       strength: 11,
       speed: 12,
       shooting: 14,
       passing: 10,
       technique: 16
     };
+  }
 
     const gear = [
       {
