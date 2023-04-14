@@ -116,7 +116,8 @@ function meetsRequirements(stats, gear) {
     function meetsRequirements(stats) {
   const strengthReq = document.getElementById('strength-input').value;
   const speedReq = document.getElementById('speed-input').value;
-  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 3 && stats.passing >= 1 && stats.technique >= 1;
+  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 3;
+
 }
 
     // find the gear id that meets the minimum requirements
@@ -127,9 +128,6 @@ function meetsRequirements(stats, gear) {
       suitableGear.push(item);
     }
   }
-
-return suitableGear;
-}
 
     // display the result on the page
     const resultElement = document.getElementById('result');
