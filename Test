@@ -99,7 +99,7 @@ function meetsRequirements(stats, gear) {
 
     // function to check if the character meets the minimum requirements
     function meetsRequirements(stats) {
-      return stats.strength >= 12 && stats.shooting >= 13;
+      return stats.strength >= 16 && stats.shooting >= 13;
     }
 
     // find the gear id that meets the minimum requirements
