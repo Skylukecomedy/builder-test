@@ -2,10 +2,11 @@
 <head>
 
 </head>
-<button id="search-button">Search Gear</button>
-
 
 <body>
+
+<button id="search-button">Search Gear</button>
+
   <button onclick="findGear()">Find Gear</button>
   <p id="result"></p>
 </body>
