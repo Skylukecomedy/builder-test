@@ -7,9 +7,6 @@
 
 <label for="strength-input">Minimum Strength:</label>
 <input type="number" id="strength-input" value="12">
-<button id="search-button">Search Gear</button>
-
-<button id="search-button">Search Gear</button>
 
   <button onclick="findGear()">Find Gear</button>
   <p id="result"></p>
