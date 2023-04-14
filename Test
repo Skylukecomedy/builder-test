@@ -53,6 +53,14 @@ function meetsRequirements(stats, gear) {
       passing: 10,
       technique: 16
     };
+      const baseStats2 = {
+      strength: 13,
+      speed: 14,
+      shooting: 12,
+      passing: 11,
+      technique: 10
+};
+
 
     const gear = [
       {
@@ -100,11 +108,10 @@ function meetsRequirements(stats, gear) {
     }
 
     // function to check if the character meets the minimum requirements
-    function meetsRequirements(stats) {
+    function meetsRequirements(stats, desiredStats) {
   const strengthReq = document.getElementById('strength-input').value;
   const speedReq = document.getElementById('speed-input').value;
-  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 13;
-
+  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= desiredStats.shooting && stats.passing >= desiredStats.passing && stats.technique >= desiredStats.technique;
 }
 
     // find the gear id that meets the minimum requirements
@@ -117,6 +124,16 @@ function meetsRequirements(stats, gear) {
       }
     }
 
+    let gearId2 = null;
+    for (const item of gear) {
+  const totalStats = calculateTotalStats(baseStats2, [item]);
+  if (meetsRequirements(totalStats)) {
+    gearId2 = item.id;
+    break;
+  }
+}
+
+
     // display the result on the page
     const resultElement = document.getElementById('result');
     if (gearId !== null) {
@@ -125,6 +142,12 @@ function meetsRequirements(stats, gear) {
       resultElement.textContent = 'No suitable gear found';
     }
   }
+
+      if (gearId2 !== null) {
+      resultElement.textContent += `Gear ID for Character 2: ${gearId2}`;
+}     else {
+       resultElement.textContent += 'No suitable gear found for Character 2';
+}
 </script>
 
 
