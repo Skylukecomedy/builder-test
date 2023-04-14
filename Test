@@ -34,15 +34,15 @@ function getDesiredStats() {
 }
 
 // function to check if the character meets the desired final stats after equipping gear
-function meetsRequirements(stats, gear) {
-  const totalStats = calculateTotalStats(stats, gear);
+function meetsRequirements(stats, desiredStats) {
+  const totalStats = calculateTotalStats(stats, []);
   for (const [stat, value] of Object.entries(desiredStats)) {
     if (totalStats[stat] < value) {
       return false;
     }
   }
   return true;
-}
+}}
 
 
   function findGear() {
