@@ -11,61 +11,59 @@
 <label for="speed-input">Minimum Speed:</label>
 <input type="number" id="speed-input" value="12">
 
-  <button onclick="findGear(true)">Find Gear (Base Stat 2)</button>
-   <button onclick="findGear(false)">Find Gear (Base Stat 1)</button>
+<button onclick="findGear(true)">Find Gear (Base Stat 2)</button>
+<button onclick="findGear(false)">Find Gear (Base Stat 1)</button>
 
-  <p id="result"></p>
+<p id="result"></p>
+
 </body>
-
-
 
 <script>
 
-// function to get the desired stats object with updated strength value
-function getDesiredStats() {
-  const strength = Number(document.getElementById('strength-input').value);
-  const speed = Number(document.getElementById('speed-input').value);
- 
-  return {
-    strength,
-    speed,
-    shooting: 3,
-    passing: 10,
-    technique: 18
-  };
-}
+  // function to get the desired stats object with updated strength value
+  function getDesiredStats() {
+    const strength = Number(document.getElementById('strength-input').value);
+    const speed = Number(document.getElementById('speed-input').value);
 
-// function to check if the character meets the desired final stats after equipping gear
-function meetsRequirements(stats, gear) {
-  const totalStats = calculateTotalStats(stats, gear);
-  for (const [stat, value] of Object.entries(desiredStats)) {
-    if (totalStats[stat] < value) {
-      return false;
-    }
+    return {
+      strength,
+      speed,
+      shooting: 3,
+      passing: 10,
+      technique: 18
+    };
   }
-  return true;
-}
 
+  // function to check if the character meets the desired final stats after equipping gear
+  function meetsRequirements(stats, gear) {
+    const totalStats = calculateTotalStats(stats, gear);
+    for (const [stat, value] of Object.entries(desiredStats)) {
+      if (totalStats[stat] < value) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   function findGear(useBaseStat2) {
-  let baseStats;
-  if (useBaseStat2) {
-    baseStats = {
-      strength: 11,
-      speed: 11,
-      shooting: 10,
-      passing: 14,
-      technique: 17
-    };
-  } else {
-    baseStats = {
-      strength: 11,
-      speed: 12,
-      shooting: 14,
-      passing: 10,
-      technique: 16
-    };
-  }
+    let baseStats;
+    if (useBaseStat2) {
+      baseStats = {
+        strength: 11,
+        speed: 11,
+        shooting: 10,
+        passing: 14,
+        technique: 17
+      };
+    } else {
+      baseStats = {
+        strength: 11,
+        speed: 12,
+        shooting: 14,
+        passing: 10,
+        technique: 16
+      };
+    }
 
     const gear = [
       {
@@ -94,6 +92,24 @@ function meetsRequirements(stats, gear) {
           shooting: 2,
           technique: -2
         }
+      },
+      {
+        name: 'Muscle Chest',
+        id: 4,
+        type: 'body',
+        stats: {
+          strength: 2,
+          shooting: -2
+        }
+      },
+      {
+        name: 'Turbo Pad',
+        id: 5,
+        type: 'body',
+        stats: {
+          speed: 2,
+          passing: -2
+        }
       }
     ];
 
@@ -114,33 +130,118 @@ function meetsRequirements(stats, gear) {
 
     // function to check if the character meets the minimum requirements
     function meetsRequirements(stats) {
-  const strengthReq = document.getElementById('strength-input').value;
-  const speedReq = document.getElementById('speed-input').value;
-  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 3 && stats.passing >= 1 && stats.technique >= 1;
+      const strengthReq = document.getElementById('strength-input').value;
+     
+const speedReq = document.getElementById('speed-input').value;
+return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 3 && stats.passing >= 10 && stats.technique >= 18;
 }
 
-    // find the gear id that meets the minimum requirements
-    const suitableGear = [];
-  for (const item of gear) {
-    const totalStats = calculateTotalStats(baseStats, [item]);
-    if (meetsRequirements(totalStats)) {
-      suitableGear.push(item);
-    }
-  }
+// function to find all gear that meets the minimum requirements
+function findSuitableGear(baseStats, gear) {
+const suitableGear = [];
+
+for (const item of gear) {
+const totalStats = calculateTotalStats(baseStats, [item]);
+if (meetsRequirements(totalStats)) {
+suitableGear.push(item);
+}
+}
 
 return suitableGear;
 }
 
-    // display the result on the page
-    const resultElement = document.getElementById('result');
-  if (suitableGear.length > 0) {
-    const gearList = suitableGear.map(item => `${item.name} (ID: ${item.id})`).join(', ');
-    resultElement.textContent = `Suitable gear: ${gearList}`;
-  } else {
-    resultElement.textContent = 'No suitable gear found';
-  }
+function findGear() {
+const strength = Number(document.getElementById('strength-input').value);
+const speed = Number(document.getElementById('speed-input').value);
+
+const baseStats1 = {
+strength: 11,
+speed: 12,
+shooting: 14,
+passing: 10,
+technique: 16
+};
+
+const baseStats2 = {
+strength: 11,
+speed: 11,
+shooting: 10,
+passing: 14,
+technique: 17
+};
+
+const gear = [
+{
+name: 'Muscle Helmet',
+id: 1,
+type: 'head',
+stats: {
+strength: 2,
+technique: -2
+}
+},
+{
+name: 'Turbo Helmet',
+id: 2,
+type: 'head',
+stats: {
+speed: 2,
+technique: -2
+}
+},
+{
+name: 'Cannon Visor',
+id: 3,
+type: 'head',
+stats: {
+shooting: 2,
+technique: -2
+}
+},
+{
+name: 'Muscle Chest',
+id: 4,
+type: 'body',
+stats: {
+strength: 2,
+shooting: -2
+}
+},
+{
+name: 'Turbo Pad',
+id: 5,
+type: 'body',
+stats: {
+speed: 2,
+passing: -2
+}
+}
+];
+
+const suitableGear1 = findSuitableGear(baseStats1, gear);
+const suitableGear2 = findSuitableGear(baseStats2, gear);
+
+// display the result on the page
+const resultElement = document.getElementById('result');
+if (suitableGear1.length > 0) {
+resultElement.innerHTML = <h2>Suitable Gear (Base Stat 1):</h2><ul>;
+for (const item of suitableGear1) {
+resultElement.innerHTML += <li>Gear ID: ${item.id}, Name: ${item.name}, Type: ${item.type}</li>;
+}
+resultElement.innerHTML += </ul>;
+} else {
+resultElement.innerHTML = 'No suitable gear found for Base Stat 1';
+}
+
+if (suitableGear2.length > 0) {
+resultElement.innerHTML += <h2>Suitable Gear (Base Stat 2):</h2><ul>;
+for (const item of suitableGear2) {
+resultElement.innerHTML += <li>Gear ID: ${item.id}, Name: ${item.name}, Type: ${item.type}</li>;
+}
+resultElement.innerHTML += </ul>;
+} else {
+resultElement.innerHTML += 'No suitable gear found for Base Stat 2';
+}
 }
 </script>
-
-
 </html>
