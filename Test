@@ -51,11 +51,11 @@ function meetsRequirements(stats, gear) {
   let baseStats;
   if (useBaseStat2) {
     baseStats = {
-      strength: 9,
-      speed: 14,
-      shooting: 16,
-      passing: 12,
-      technique: 18
+      strength: 11,
+      speed: 11,
+      shooting: 10,
+      passing: 14,
+      technique: 17
     };
   } else {
     baseStats = {
