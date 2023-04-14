@@ -103,6 +103,10 @@ function meetsRequirements(stats, gear) {
     function meetsRequirements(stats) {
   const strengthReq = document.getElementById('strength-input').value;
   return stats.strength >= strengthReq && stats.shooting >= 13;
+
+const speedReq = document.getElementById('speed-input').value;
+  return stats.speed >= speedReq && stats.shooting >= 13;
+
 }
 
     // find the gear id that meets the minimum requirements
