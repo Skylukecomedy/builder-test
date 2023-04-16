@@ -1,5 +1,5 @@
 <html>
-Hi
+H
 <head>
 </head>
 <body>
@@ -45,7 +45,7 @@ function filter() {
 
   filteredBuilds.forEach(build => {
     const listItem = document.createElement("li");
-    listItem.innerText = build.name;
+    listItem.innerText = build.Char;
     resultsList.appendChild(listItem);
   });
 }
