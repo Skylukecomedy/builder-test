@@ -24,6 +24,6 @@
 
     <div id="results"></div>
 
-    <script src="path/to/main/javascript/file.js"></script>
+    <script src="Test.js"></script>
   </body>
 </html>
