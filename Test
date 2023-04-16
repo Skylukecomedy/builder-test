@@ -9,11 +9,17 @@ Working
 <body>
 
 <label for="strength-input">Minimum Strength:</label>
+<input type="number" id="strength-input" value="12">
 
 <label for="speed-input">Minimum Speed:</label>
+<input type="number" id="speed-input" value="12">
 
-  
+  <button onclick="findGear(true)">Find Gear (Base Stat 2)</button>
+   <button onclick="findGear(false)">Find Gear (Base Stat 1)</button>
+
   <p id="result"></p>
+</body>
+
 </body>
 
 
