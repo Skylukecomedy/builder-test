@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+Hi
   <head>
     <title>Filter Builds</title>
   </head>
@@ -52,7 +53,7 @@
         } else {
           filteredBuilds.forEach(build => {
             const listItem = document.createElement("li");
-            listItem.innerText = build.Char;
+            listItem.innerText = build.Gear;
             resultsList.appendChild(listItem);
           });
         }
