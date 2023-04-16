@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-hey styx
+hey styx dude
   <head>
     <title>Filter Builds</title>
   </head>
@@ -46,7 +46,8 @@ hey styx
     <ul id="results"></ul>
     <p id="error-message"></p>
 
-    <script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/finalhope3.js"></script>
+    <script src="finalhope3.js"
+"></script>
     <script>
       const errorMessage = document.getElementById('error-message');
 
