@@ -16,9 +16,13 @@
 
   <label for="tech">Tech:</label>
   <input type="text" id="tech" name="tech"><br>
+
+  <button type="button" onclick="filter()">Filter</button>
 </body>
 
 <script>
-// Your JavaScript code here, if needed
+function filter() {
+  // Your filtering code here
+}
 </script>
 </html>
