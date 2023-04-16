@@ -31,7 +31,7 @@
     <ul id="results"></ul>
     <p id="error-message"></p>
 
-    <script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
+    <script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/testtest.js"></script>
     <script>
       const errorMessage = document.getElementById('error-message');
 
