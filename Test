@@ -23,8 +23,9 @@ H
   <ul id="results"></ul>
 </body>
 
-<script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
-<script>
+
+import { builds } from "./path/to/your/js/file.js";
+
 function filter() {
   const strValue = document.getElementById("str").value;
   const spdValue = document.getElementById("spd").value;
@@ -32,7 +33,7 @@ function filter() {
   const passValue = document.getElementById("pass").value;
   const techValue = document.getElementById("tech").value;
 
-  const filteredBuilds = Builds.filter(build =>
+ const filteredbuilds = builds.filter(build =>
     build.Str >= strValue &&
     build.Spd >= spdValue &&
     build.Shot >= shotValue &&
@@ -43,7 +44,7 @@ function filter() {
   const resultsList = document.getElementById("results");
   resultsList.innerHTML = "";
 
-  filteredBuilds.forEach(build => {
+  filteredbuilds.forEach(build => {
     const listItem = document.createElement("li");
     listItem.innerText = build.Char;
     resultsList.appendChild(listItem);
