@@ -1,9 +1,15 @@
 <html>
-
 <head>
-
 </head>
 <body>
+  <label for="char">Character:</label>
+  <select id="char">
+    <option value="Mario">Mario</option>
+    <option value="Luigi">Luigi</option>
+    <option value="Peach">Peach</option>
+    <option value="Daisy">Daisy</option>
+  </select><br>
+
   <label for="str">Str:</label>
   <input type="text" id="str" name="str"><br>
 
@@ -27,6 +33,7 @@
 <script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
 <script>
 function filter() {
+  const selectedChar = document.getElementById("char").value;
   const strValue = document.getElementById("str").value;
   const spdValue = document.getElementById("spd").value;
   const shotValue = document.getElementById("shot").value;
@@ -34,6 +41,7 @@ function filter() {
   const techValue = document.getElementById("tech").value;
 
   const filteredBuilds = Builds.filter(build =>
+    build.Char === selectedChar &&
     build.Str >= strValue &&
     build.Spd >= spdValue &&
     build.Shot >= shotValue &&
@@ -51,5 +59,4 @@ function filter() {
   });
 }
 </script> 
-
 </html>
