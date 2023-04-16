@@ -1,63 +1,148 @@
 <!DOCTYPE html>
+Working
+
+
 <html>
 <head>
+
 </head>
+
 <body>
-  <label for="char">Character:</label>
-  <select id="char">
-    <option value="Mario">Mario</option>
-    <option value="Luigi">Luigi</option>
-    <option value="Peach">Peach</option>
-    <option value="Daisy">Daisy</option>
-  </select><br>
 
-  <label for="str">Str:</label>
-  <input type="text" id="str" name="str"><br>
+<label for="strength-input">Minimum Strength:</label>
+<input type="number" id="strength-input" value="12">
 
-  <label for="spd">Spd:</label>
-  <input type="text" id="spd" name="spd"><br>
+<label for="speed-input">Minimum Speed:</label>
+<input type="number" id="speed-input" value="12">
 
-  <label for="shot">Shot:</label>
-  <input type="text" id="shot" name="shot"><br>
+  <button onclick="findGear(true)">Find Gear (Base Stat 2)</button>
+   <button onclick="findGear(false)">Find Gear (Base Stat 1)</button>
 
-  <label for="pass">Pass:</label>
-  <input type="text" id="pass" name="pass"><br>
-
-  <label for="tech">Tech:</label>
-  <input type="text" id="tech" name="tech"><br>
-
-  <button type="button" onclick="filter()">Filter</button>
-
-  <ul id="results"></ul>
+  <p id="result"></p>
 </body>
 
-<script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
+
+
 <script>
-function filter() {
-  const selectedChar = document.getElementById("char").value;
-  const strValue = parseInt(document.getElementById("str").value);
-  const spdValue = parseInt(document.getElementById("spd").value);
-  const shotValue = parseInt(document.getElementById("shot").value);
-  const passValue = parseInt(document.getElementById("pass").value);
-  const techValue = parseInt(document.getElementById("tech").value);
 
-  const filteredBuilds = Builds.filter(build =>
-    build.Char === selectedChar &&
-    build.Str >= strValue &&
-    build.Spd >= spdValue &&
-    build.Shot >= shotValue &&
-    build.Pass >= passValue &&
-    build.Tech >= techValue
-  );
-
-  const resultsList = document.getElementById("results");
-  resultsList.innerHTML = "";
-
-  filteredBuilds.forEach(build => {
-    const listItem = document.createElement("li");
-    listItem.innerText = build.Gear;
-    resultsList.appendChild(listItem);
-  });
+// function to get the desired stats object with updated strength value
+function getDesiredStats() {
+  const strength = Number(document.getElementById('strength-input').value);
+  const speed = Number(document.getElementById('speed-input').value);
+ 
+  return {
+    strength,
+    speed,
+    shooting: 3,
+    passing: 10,
+    technique: 18
+  };
 }
-</script> 
+
+// function to check if the character meets the desired final stats after equipping gear
+function meetsRequirements(stats, gear) {
+  const totalStats = calculateTotalStats(stats, gear);
+  for (const [stat, value] of Object.entries(desiredStats)) {
+    if (totalStats[stat] < value) {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+  function findGear(useBaseStat2) {
+  let baseStats;
+  if (useBaseStat2) {
+    baseStats = {
+      strength: 11,
+      speed: 11,
+      shooting: 10,
+      passing: 14,
+      technique: 17
+    };
+  } else {
+    baseStats = {
+      strength: 11,
+      speed: 12,
+      shooting: 14,
+      passing: 10,
+      technique: 16
+    };
+  }
+
+    const gear = [
+      {
+        name: 'Muscle Helmet',
+        id: 1,
+        type: 'head',
+        stats: {
+          strength: 2,
+          technique: -2
+        }
+      },
+      {
+        name: 'Turbo Helmet',
+        id: 2,
+        type: 'head',
+        stats: {
+          speed: 2,
+          technique: -2
+        }
+      },
+      {
+        name: 'Cannon Visor',
+        id: 3,
+        type: 'head',
+        stats: {
+          shooting: 2,
+          technique: -2
+        }
+      }
+    ];
+
+    // function to calculate the total stats of a character with given gear
+    function calculateTotalStats(stats, gear) {
+      let totalStats = { ...stats }; // make a copy of the original stats
+      for (const item of gear) {
+        if (item.stats) {
+          // if the item has stats
+          for (const [stat, value] of Object.entries(item.stats)) {
+            // add or subtract the stat value based on the gear
+            totalStats[stat] += value;
+          }
+        }
+      }
+      return totalStats;
+    }
+
+    // function to check if the character meets the minimum requirements
+    function meetsRequirements(stats) {
+  const strengthReq = document.getElementById('strength-input').value;
+  const speedReq = document.getElementById('speed-input').value;
+  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 3;
+
+}
+
+    // find the gear id that meets the minimum requirements
+    const suitableGear = [];
+  for (const item of gear) {
+    const totalStats = calculateTotalStats(baseStats, [item]);
+    if (meetsRequirements(totalStats)) {
+      suitableGear.push(item);
+    }
+  }
+
+    // display the result on the page
+    const resultElement = document.getElementById('result');
+  if (suitableGear.length > 0) {
+    const gearList = suitableGear.map(item => `${item.name} (ID: ${item.id})`).join(', ');
+    resultElement.textContent = `Suitable gear: ${gearList}`;
+  } else {
+    resultElement.textContent = 'No suitable gear found';
+  }
+}
+</script>
+
+
 </html>
