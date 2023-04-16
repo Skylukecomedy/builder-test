@@ -34,11 +34,11 @@
 <script>
 function filter() {
   const selectedChar = document.getElementById("char").value;
-  const strValue = document.getElementById("str").value;
-  const spdValue = document.getElementById("spd").value;
-  const shotValue = document.getElementById("shot").value;
-  const passValue = document.getElementById("pass").value;
-  const techValue = document.getElementById("tech").value;
+  const strValue = parseInt(document.getElementById("str").value);
+  const spdValue = parseInt(document.getElementById("spd").value);
+  const shotValue = parseInt(document.getElementById("shot").value);
+  const passValue = parseInt(document.getElementById("pass").value);
+  const techValue = parseInt(document.getElementById("tech").value);
 
   const filteredBuilds = Builds.filter(build =>
     build.Char === selectedChar &&
