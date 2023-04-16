@@ -24,7 +24,7 @@ H
 </body>
 
 
-import { builds } from "./path/to/your/js/file.js";
+import { builds } from "https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js";
 
 function filter() {
   const strValue = document.getElementById("str").value;
