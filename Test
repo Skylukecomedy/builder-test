@@ -1,28 +1,24 @@
-Working
-
-
 <html>
 <head>
-
 </head>
-
 <body>
+  <label for="stg">Stg:</label>
+  <input type="text" id="stg" name="stg"><br>
 
+  <label for="spd">Spd:</label>
+  <input type="text" id="spd" name="spd"><br>
+
+  <label for="shot">Shot:</label>
+  <input type="text" id="shot" name="shot"><br>
+
+  <label for="pass">Pass:</label>
+  <input type="text" id="pass" name="pass"><br>
+
+  <label for="tech">Tech:</label>
+  <input type="text" id="tech" name="tech"><br>
 </body>
-
-</body>
-
-
 
 <script>
-
-
- 
-
-   
-
-   
+// Your JavaScript code here, if needed
 </script>
-
-
 </html>
