@@ -1,58 +1,62 @@
 <!DOCTYPE html>
-Working
-
-
 <html>
-<head>
-</head>
-<body>
-  <label for="str">Str:</label>
-  <input type="text" id="str" name="str"><br>
+  <head>
+    <title>Filter Builds</title>
+  </head>
+  <body>
+    <label for="str">Str:</label>
+    <input type="text" id="str" name="str"><br>
 
-  <label for="spd">Spd:</label>
-  <input type="text" id="spd" name="spd"><br>
+    <label for="spd">Spd:</label>
+    <input type="text" id="spd" name="spd"><br>
 
-  <label for="shot">Shot:</label>
-  <input type="text" id="shot" name="shot"><br>
+    <label for="shot">Shot:</label>
+    <input type="text" id="shot" name="shot"><br>
 
-  <label for="pass">Pass:</label>
-  <input type="text" id="pass" name="pass"><br>
+    <label for="pass">Pass:</label>
+    <input type="text" id="pass" name="pass"><br>
 
-  <label for="tech">Tech:</label>
-  <input type="text" id="tech" name="tech"><br>
+    <label for="tech">Tech:</label>
+    <input type="text" id="tech" name="tech"><br>
 
-  <button type="button" onclick="filter()">Filter</button>
+    <button type="button" onclick="filter()">Filter</button>
 
-  <ul id="results"></ul>
-</body>
+    <ul id="results"></ul>
+    <p id="error-message"></p>
 
-<script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
-<script>
-function filter() {
-  const strValue = parseInt(document.getElementById("str").value);
-const spdValue = parseInt(document.getElementById("spd").value);
-const shotValue = parseInt(document.getElementById("shot").value);
-const passValue = parseInt(document.getElementById("pass").value);
-const techValue = parseInt(document.getElementById("tech").value);
+    <script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
+    <script>
+      const errorMessage = document.getElementById('error-message');
 
+      function filter() {
+        const strValue = parseInt(document.getElementById("str").value);
+        const spdValue = parseInt(document.getElementById("spd").value);
+        const shotValue = parseInt(document.getElementById("shot").value);
+        const passValue = parseInt(document.getElementById("pass").value);
+        const techValue = parseInt(document.getElementById("tech").value);
 
-  const filteredBuilds = Builds.filter(build =>
-    build.Str >= strValue &&
-    build.Spd >= spdValue &&
-    build.Shot >= shotValue &&
-    build.Pass >= passValue &&
-    build.Tech >= techValue
-  );
+        const filteredBuilds = Builds.filter(build =>
+          build.Str >= strValue &&
+          build.Spd >= spdValue &&
+          build.Shot >= shotValue &&
+          build.Pass >= passValue &&
+          build.Tech >= techValue
+        );
 
-  const resultsList = document.getElementById("results");
-  resultsList.innerHTML = "";
+        const resultsList = document.getElementById("results");
+        resultsList.innerHTML = "";
 
-  filteredBuilds.forEach(build => {
-    const listItem = document.createElement("li");
-    listItem.innerText = build.Char;
-    resultsList.appendChild(listItem);
-  });
-}
-</script> 
-
+        if (filteredBuilds.length === 0) {
+          // show error message
+          errorMessage.textContent = 'No results found.';
+        } else {
+          filteredBuilds.forEach(build => {
+            const listItem = document.createElement("li");
+            listItem.innerText = build.Char;
+            resultsList.appendChild(listItem);
+          });
+        }
+      }
+    </script> 
+  </body>
 </html>
