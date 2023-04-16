@@ -31,12 +31,12 @@ function filter() {
   const passValue = document.getElementById("pass").value;
   const techValue = document.getElementById("tech").value;
 
-  const filteredPlayers = players.filter(player =>
-    player.stg >= stgValue &&
-    player.spd >= spdValue &&
-    player.shot >= shotValue &&
-    player.pass >= passValue &&
-    player.tech >= techValue
+  const filteredBuilds = Builds.filter(build =>
+    build.Str >= strValue &&
+    build.Spd >= spdValue &&
+    build.Shot >= shotValue &&
+    build.Pass >= passValue &&
+    build.Tech >= techValue
   );
 
   const resultsList = document.getElementById("results");
