@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 </head>
 <body>
@@ -23,8 +23,9 @@
   <ul id="results"></ul>
 </body>
 
-<script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
-<script>
+<script type="module">
+import { Builds } from "https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js";
+
 function filter() {
   const strValue = document.getElementById("str").value;
   const spdValue = document.getElementById("spd").value;
