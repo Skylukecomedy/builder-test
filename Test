@@ -4,144 +4,84 @@ Working
 <html>
 <head>
 
+
+
+
+
+<label for="str-min">Minimum Strength:</label>
+<input type="number" id="str-min">
+
+<label for="spd-min">Minimum Speed:</label>
+<input type="number" id="spd-min">
+
+<label for="shot-min">Minimum Shot:</label>
+<input type="number" id="shot-min">
+
+<label for="pass-min">Minimum Pass:</label>
+<input type="number" id="pass-min">
+
+<label for="tech-min">Minimum Technique:</label>
+<input type="number" id="tech-min">
+
+<button onclick="findMatchingBuilds()">Find Matching Builds</button>
+
 </head>
 
 <body>
-
-<label for="strength-input">Minimum Strength:</label>
-<input type="number" id="strength-input" value="12">
-
-<label for="speed-input">Minimum Speed:</label>
-<input type="number" id="speed-input" value="12">
-
-  <button onclick="findGear(true)">Find Gear (Base Stat 2)</button>
-   <button onclick="findGear(false)">Find Gear (Base Stat 1)</button>
-
-  <p id="result"></p>
-</body>
 
 
 
 <script>
 
-// function to get the desired stats object with updated strength value
-function getDesiredStats() {
-  const strength = Number(document.getElementById('strength-input').value);
-  const speed = Number(document.getElementById('speed-input').value);
- 
-  return {
-    strength,
-    speed,
-    shooting: 3,
-    passing: 10,
-    technique: 18
-  };
-}
+function findMatchingBuilds() {
+  // Retrieve the minimum values from the input boxes
+  const strMin = parseInt(document.getElementById('str-min').value);
+  const spdMin = parseInt(document.getElementById('spd-min').value);
+  const shotMin = parseInt(document.getElementById('shot-min').value);
+  const passMin = parseInt(document.getElementById('pass-min').value);
+  const techMin = parseInt(document.getElementById('tech-min').value);
 
-// function to check if the character meets the desired final stats after equipping gear
-function meetsRequirements(stats, gear) {
-  const totalStats = calculateTotalStats(stats, gear);
-  for (const [stat, value] of Object.entries(desiredStats)) {
-    if (totalStats[stat] < value) {
-      return false;
-    }
-  }
-  return true;
-}
+  // Filter the Builds array to find the matching builds
+  const matchingBuilds = Builds.filter(build => (
+    build.Str >= strMin &&
+    build.Spd >= spdMin &&
+    build.Shot >= shotMin &&
+    build.Pass >= passMin &&
+    build.Tech >= techMin
+  ));
 
+  // Display the matching builds on the webpage
+  const resultsContainer = document.getElementById('results');
+  resultsContainer.innerHTML = '';
 
-  function findGear(useBaseStat2) {
-  let baseStats;
-  if (useBaseStat2) {
-    baseStats = {
-      strength: 11,
-      speed: 11,
-      shooting: 10,
-      passing: 14,
-      technique: 17
-    };
+  if (matchingBuilds.length > 0) {
+    const header = document.createElement('h2');
+    header.textContent = 'Matching Builds:';
+    resultsContainer.appendChild(header);
+
+    const list = document.createElement('ul');
+    matchingBuilds.forEach(build => {
+      const item = document.createElement('li');
+      item.textContent = `Gear: ${build.Gear}, Str: ${build.Str}, Spd: ${build.Spd}, Shot: ${build.Shot}, Pass: ${build.Pass}, Tech: ${build.Tech}`;
+      list.appendChild(item);
+    });
+    resultsContainer.appendChild(list);
   } else {
-    baseStats = {
-      strength: 11,
-      speed: 12,
-      shooting: 14,
-      passing: 10,
-      technique: 16
-    };
-  }
-
-    const gear = [
-      {
-        name: 'Muscle Helmet',
-        id: 1,
-        type: 'head',
-        stats: {
-          strength: 2,
-          technique: -2
-        }
-      },
-      {
-        name: 'Turbo Helmet',
-        id: 2,
-        type: 'head',
-        stats: {
-          speed: 2,
-          technique: -2
-        }
-      },
-      {
-        name: 'Cannon Visor',
-        id: 3,
-        type: 'head',
-        stats: {
-          shooting: 2,
-          technique: -2
-        }
-      }
-    ];
-
-    // function to calculate the total stats of a character with given gear
-    function calculateTotalStats(stats, gear) {
-      let totalStats = { ...stats }; // make a copy of the original stats
-      for (const item of gear) {
-        if (item.stats) {
-          // if the item has stats
-          for (const [stat, value] of Object.entries(item.stats)) {
-            // add or subtract the stat value based on the gear
-            totalStats[stat] += value;
-          }
-        }
-      }
-      return totalStats;
-    }
-
-    // function to check if the character meets the minimum requirements
-    function meetsRequirements(stats) {
-  const strengthReq = document.getElementById('strength-input').value;
-  const speedReq = document.getElementById('speed-input').value;
-  return stats.strength >= strengthReq && stats.speed >= speedReq && stats.shooting >= 3;
-
-}
-
-    // find the gear id that meets the minimum requirements
-    const suitableGear = [];
-  for (const item of gear) {
-    const totalStats = calculateTotalStats(baseStats, [item]);
-    if (meetsRequirements(totalStats)) {
-      suitableGear.push(item);
-    }
-  }
-
-    // display the result on the page
-    const resultElement = document.getElementById('result');
-  if (suitableGear.length > 0) {
-    const gearList = suitableGear.map(item => `${item.name} (ID: ${item.id})`).join(', ');
-    resultElement.textContent = `Suitable gear: ${gearList}`;
-  } else {
-    resultElement.textContent = 'No suitable gear found';
+    const message = document.createElement('p');
+    message.textContent = 'No matching builds found.';
+    resultsContainer.appendChild(message);
   }
 }
+
 </script>
 
+src="path/to/external/file.js"></script>
+  </head>
+  <body>
+    <!-- Your webpage content here -->
+    <script src="path/to/main/javascript/file.js">
+
+</body>
+<div id="results"></div>
 
 </html>
