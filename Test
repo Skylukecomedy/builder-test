@@ -45,7 +45,7 @@ function filter() {
 
   filteredBuilds.forEach(build => {
     const listItem = document.createElement("li");
-    listItem.innerText = build.Char;
+    listItem.innerText = build.Gear;
     resultsList.appendChild(listItem);
   });
 }
