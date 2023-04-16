@@ -4,7 +4,7 @@ Working
 <html>
 <head>
 
-
+<script src="build3.js"></script>
 
 
 
@@ -75,10 +75,9 @@ function findMatchingBuilds() {
 
 </script>
 
-src="path/to/external/file.js"></script>
-  </head>
+</head>
   <body>
-    <!-- Your webpage content here -->
+   
     <script src="path/to/main/javascript/file.js">
 
 </body>
