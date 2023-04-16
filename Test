@@ -22,7 +22,7 @@
   <ul id="results"></ul>
 
 <script type="module">
-import { builds } from "https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js";
+import { Builds } from "https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js";
 
 function filter() {
   const strValue = document.getElementById("str").value;
@@ -31,7 +31,7 @@ function filter() {
   const passValue = document.getElementById("pass").value;
   const techValue = document.getElementById("tech").value;
 
- const filteredBuilds = builds.filter(build =>
+ const filteredBuilds = Builds.filter(build =>
     build.Str >= strValue &&
     build.Spd >= spdValue &&
     build.Shot >= shotValue &&
@@ -52,3 +52,4 @@ function filter() {
 
 </body>
 </html>
+Hh
