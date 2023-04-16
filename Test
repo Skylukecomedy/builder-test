@@ -42,9 +42,9 @@ function filter() {
   const resultsList = document.getElementById("results");
   resultsList.innerHTML = "";
 
-  filteredPlayers.forEach(player => {
+  filteredBuilds.forEach(build => {
     const listItem = document.createElement("li");
-    listItem.innerText = player.name;
+    listItem.innerText = build.name;
     resultsList.appendChild(listItem);
   });
 }
