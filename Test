@@ -1,5 +1,4 @@
 <html>
-H
 <head>
 </head>
 <body>
@@ -21,9 +20,8 @@ H
   <button type="button" onclick="filter()">Filter</button>
 
   <ul id="results"></ul>
-</body>
 
-
+<script type="module">
 import { builds } from "https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js";
 
 function filter() {
@@ -33,7 +31,7 @@ function filter() {
   const passValue = document.getElementById("pass").value;
   const techValue = document.getElementById("tech").value;
 
- const filteredbuilds = builds.filter(build =>
+ const filteredBuilds = builds.filter(build =>
     build.Str >= strValue &&
     build.Spd >= spdValue &&
     build.Shot >= shotValue &&
@@ -44,12 +42,13 @@ function filter() {
   const resultsList = document.getElementById("results");
   resultsList.innerHTML = "";
 
-  filteredbuilds.forEach(build => {
+  filteredBuilds.forEach(build => {
     const listItem = document.createElement("li");
     listItem.innerText = build.Char;
     resultsList.appendChild(listItem);
   });
 }
-</script> 
+</script>
 
+</body>
 </html>
