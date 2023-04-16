@@ -24,7 +24,7 @@
   <ul id="results"></ul>
 </body>
 
-<script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest2.js"></script>
+<script src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
 <script>
 function filter() {
   const strValue = document.getElementById("str").value;
