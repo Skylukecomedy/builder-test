@@ -1,57 +1,53 @@
-H
-
+<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-  <label for="str">Str:</label>
-  <input type="text" id="str" name="str"><br>
+  <head>
+    <script type="module" src="https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js"></script>
+  </head>
+  <body>
+    <label for="str">Str:</label>
+    <input type="text" id="str" name="str"><br>
 
-  <label for="spd">Spd:</label>
-  <input type="text" id="spd" name="spd"><br>
+    <label for="spd">Spd:</label>
+    <input type="text" id="spd" name="spd"><br>
 
-  <label for="shot">Shot:</label>
-  <input type="text" id="shot" name="shot"><br>
+    <label for="shot">Shot:</label>
+    <input type="text" id="shot" name="shot"><br>
 
-  <label for="pass">Pass:</label>
-  <input type="text" id="pass" name="pass"><br>
+    <label for="pass">Pass:</label>
+    <input type="text" id="pass" name="pass"><br>
 
-  <label for="tech">Tech:</label>
-  <input type="text" id="tech" name="tech"><br>
+    <label for="tech">Tech:</label>
+    <input type="text" id="tech" name="tech"><br>
 
-  <button type="button" onclick="filter()">Filter</button>
+    <button type="button" onclick="filter()">Filter</button>
 
-  <ul id="results"></ul>
+    <ul id="results"></ul>
 
-<script type="module">
-import { Builds } from "https://raw.githubusercontent.com/Skylukecomedy/builder-test/main/buildstest3.js";
+    <script type="module">
+      function filter() {
+        const strValue = document.getElementById("str").value;
+        const spdValue = document.getElementById("spd").value;
+        const shotValue = document.getElementById("shot").value;
+        const passValue = document.getElementById("pass").value;
+        const techValue = document.getElementById("tech").value;
 
-function filter() {
-  const strValue = document.getElementById("str").value;
-  const spdValue = document.getElementById("spd").value;
-  const shotValue = document.getElementById("shot").value;
-  const passValue = document.getElementById("pass").value;
-  const techValue = document.getElementById("tech").value;
+        const filteredBuilds = Builds.filter(build =>
+          build.Str >= strValue &&
+          build.Spd >= spdValue &&
+          build.Shot >= shotValue &&
+          build.Pass >= passValue &&
+          build.Tech >= techValue
+        );
 
- const filteredBuilds = Builds.filter(build =>
-    build.Str >= strValue &&
-    build.Spd >= spdValue &&
-    build.Shot >= shotValue &&
-    build.Pass >= passValue &&
-    build.Tech >= techValue
-  );
+        const resultsList = document.getElementById("results");
+        resultsList.innerHTML = "";
 
-  const resultsList = document.getElementById("results");
-  resultsList.innerHTML = "";
-
-  filteredBuilds.forEach(build => {
-    const listItem = document.createElement("li");
-    listItem.innerText = build.Char;
-    resultsList.appendChild(listItem);
-  });
-}
-</script>
-
-</body>
+        filteredBuilds.forEach(build => {
+          const listItem = document.createElement("li");
+          listItem.innerText = build.Char;
+          resultsList.appendChild(listItem);
+        });
+      }
+    </script>
+  </body>
 </html>
-
