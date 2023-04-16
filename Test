@@ -78,7 +78,7 @@ function findMatchingBuilds() {
 </head>
   <body>
    
-    <script src="path/to/main/javascript/file.js">
+    <script src="Test.js">
 
 </body>
 <div id="results"></div>
