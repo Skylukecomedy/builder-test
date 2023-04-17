@@ -300,4 +300,4 @@ const Builds = [
 {"Char": "Mario", "Gear": "0298", "Str": "8", "Spd": "14", "Shot": "17", "Pass": "9", "Tech": "15"},
 {"Char": "Mario", "Gear": "0299", "Str": "5", "Spd": "18", "Shot": "13", "Pass": "9", "Tech": "18"},
 {"Char": "Mario", "Gear": "0300", "Str": "11", "Spd": "10", "Shot": "16", "Pass": "10", "Tech": "16"},
-
+];
