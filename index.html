@@ -1,17 +1,7 @@
 h<!DOCTYPE html>
 <html>
 <head>
-<script>
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var dropdownBtn = document.querySelector('.dropdown-btn');
-    var dropdownMenu = document.querySelector('.dropdown-menu');
-
-   dropdownBtn.addEventListener('touchstart', function() {
-      dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
-    });
-  });
-</script>
   
   <meta charset="UTF-8">
   <title>Your Website</title>
@@ -121,7 +111,17 @@ h<!DOCTYPE html>
     
     <!-- Your footer content goes here -->
   </footer>
+<script>
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var dropdownBtn = document.querySelector('.dropdown-btn');
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+
+   dropdownBtn.addEventListener('touchstart', function() {
+      dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
   
 </body>
 </html>
