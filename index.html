@@ -4,6 +4,31 @@
   <meta charset="UTF-8">
   <title>Your Website</title>
   <style>
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-btn:focus + .dropdown-menu {
+  display: block;
+}
+
+
+    
     body {
       background-color: white;
     }
@@ -47,24 +72,32 @@
 </head>
 <body>
   <header>
-
-     
-    
-    <div class="container">
-      <div class="text-above-image">
-        <span style="animation-delay: 0s;">S</span>
-        <span style="animation-delay: 0.1s;">k</span>
-        <span style="animation-delay: 0.2s;">y</span>
-        <span style="animation-delay: 0.3s;"> </span>
-        <span style="animation-delay: 0.4s;">L</span>
-        <span style="animation-delay: 0.5s;">u</span>
-        <span style="animation-delay: 0.6s;">k</span>
-        <span style="animation-delay: 0.7s;">e</span>
-      </div>
-      <img src="4DDD8AE1-8D10-40CD-808A-19057EEF4C65.jpeg" alt="Website Logo" class="logo">
+  <div class="container">
+    <nav>
+      <button class="dropdown-btn">Menu</button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="text-above-image">
+      <span style="animation-delay: 0s;">S</span>
+      <span style="animation-delay: 0.1s;">k</span>
+      <span style="animation-delay: 0.2s;">y</span>
+      <span style="animation-delay: 0.3s;"> </span>
+      <span style="animation-delay: 0.4s;">L</span>
+      <span style="animation-delay: 0.5s;">u</span>
+      <span style="animation-delay: 0.6s;">k</span>
+      <span style="animation-delay: 0.7s;">e</span>
     </div>
-    <h1> to Your Website</h1>
-    <!-- Add your navigation menu or links here -->
+    <img src="4DDD8AE1-8D10-40CD-808A-19057EEF4C65.jpeg" alt="Website Logo" class="logo">
+  </div>
+  <h1> to Your Website</h1>
+
   </header>
 
   <main>
