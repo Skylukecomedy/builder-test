@@ -2,7 +2,7 @@
 
 .colorful-text span {
         position: relative;
-        top: 100px; /* Adjust the top value to move the text vertically */
+        top: 600px; /* Adjust the top value to move the text vertically */
         left: 6000px; /* Adjust the left value to move the text horizontally */
     }
 
