@@ -27,4 +27,4 @@ function close(){
     closeMenu.style.display = 'none'; // Hide the close button
 }
     
-}
+
