@@ -22,5 +22,5 @@ function show(){
     mainMenu.style.top = '0';
 }
 function close(){
-    mainMenu.style.top = '-10%';
+    mainMenu.style.top = '-100%';
 }
