@@ -2,8 +2,8 @@
 
 .colorful-text span {
         position: relative;
-        top: 10px; /* Adjust the top value to move the text vertically */
-        left: 55px; /* Adjust the left value to move the text horizontally */
+        top: 20px; /* Adjust the top value to move the text vertically */
+        left: 100px; /* Adjust the left value to move the text horizontally */
     }
 
 /* Add the following CSS rules to change the color of each letter */
