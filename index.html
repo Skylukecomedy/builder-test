@@ -6,7 +6,7 @@ h<!DOCTYPE html>
   <meta charset="UTF-8">
   <title>Your Website</title>
   <style>
-
+{
     
     padding: 0;
     margin: 0;
@@ -68,7 +68,7 @@ h<!DOCTYPE html>
     }
 
     @media(max-width:768px){
-      .hamburger}
+      .hamburger{
     display: block;
     }
 
@@ -80,8 +80,7 @@ h<!DOCTYPE html>
     }
      .hamburger.active .bar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
-    
-     }
+    }
       .nav-menu{
         position:fixed;
       left: -100%
@@ -98,14 +97,7 @@ h<!DOCTYPE html>
     }
     .nav-menu.active{
       left: 0;
-
     }
-
-    
-    
-
-
-    
     body {
       background-color: white;
     }
@@ -145,34 +137,34 @@ h<!DOCTYPE html>
       85% { color: violet; }
       100% { color: red; }
     }
+}
   </style>
 </head>
 <body>
   <header>
 
     <nav class="navbar">
-      <a href="#" class=nav-branding">DEV.</a>
+      <a href="#" class="nav-branding">DEV.</a>
     <ul> class="nav-menu">
       <li class="nav-item">
         <a href="#" class="nav-link">Home</a>
       </li>
-      <a href="#" class="nav-link">about</a>
+      <li class="nav-item">
+        <a href="#" class="nav-link">About</a>
       </li>
-      <a href="#" class="nav-link">contact</a>
+      <li class="nav-item">
+      <a href="#" class="nav-link">Contact</a>
       </li>
 
       
     </ul>
-
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      
-  </header>
-  
-    <div class="text-above-image">
+
+<div class="text-above-image">
       <span style="animation-delay: 0s;">S</span>
       <span style="animation-delay: 0.1s;">k</span>
       <span style="animation-delay: 0.2s;">y</span>
@@ -189,6 +181,10 @@ h<!DOCTYPE html>
   <h1> to Your Website</h1>
 
   
+      
+  </header>
+  
+    
 
   <main>
     <!-- Your main content goes here -->
@@ -201,16 +197,16 @@ h<!DOCTYPE html>
   </footer>
 <script>
 const hamburger = document.querySelector(".hamburger");
-  const navMenu= document.querySelector(".nav-menu");
+  const navMenu = document.querySelector(".nav-menu");
 
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
   })
-                             document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", () => {
+   document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-  }                        
+  }))                      
 </script>
   
 </body>
