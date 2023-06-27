@@ -34,11 +34,12 @@ body {
   
   .container {
     display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  flex-direction: column;
- margin-top: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+
   }
   
   ul {
