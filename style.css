@@ -72,7 +72,7 @@ body {
   .nav-toggle {
     display: none;
     position: absolute;
-    right: 2rem;
+    right: 1.7rem;
     top: 2.3rem;
     cursor: pointer;
   }
