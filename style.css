@@ -2,7 +2,7 @@
 
 .colorful-text span {
         position: relative;
-        top: 20px; /* Adjust the top value to move the text vertically */
+        top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
     }
 
@@ -73,7 +73,7 @@ body {
   .nav-toggle {
     display: none;
     position: absolute;
-    right: 3rem;
+    right: 2rem;
     top: 2.3rem;
     cursor: pointer;
   }
