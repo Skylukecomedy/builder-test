@@ -1,11 +1,11 @@
 .image {
-  width: 150px;
+  width: 1500px;
   height: auto;
 }
 
 .colorful-text span {
         position: relative;
-        top: 800px; /* Adjust the top value to move the text vertically */
+        top: 8000px; /* Adjust the top value to move the text vertically */
         left: 800px; /* Adjust the left value to move the text horizontally */
     }
 
