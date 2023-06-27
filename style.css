@@ -38,6 +38,7 @@ body {
   align-items: flex-start;
   height: 100vh;
   flex-direction: column;
+ margin-top: 20vh;
   }
   
   ul {
