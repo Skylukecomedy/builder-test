@@ -12,6 +12,7 @@ closeMenu.addEventListener('click',close);
 // close menu when you click on a menu item 
 menu_items.forEach(item => {
     item.addEventListener('click',function(){
+       event.preventDefault();
         close();
     })
 })
