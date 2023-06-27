@@ -1,3 +1,28 @@
+/* Add the following CSS rules to change the color of each letter */
+    .colorful-text span {
+        color: red;
+    }
+
+    .colorful-text span:nth-child(2) {
+        color: blue;
+    }
+
+    .colorful-text span:nth-child(3) {
+        color: green;
+    }
+
+    .colorful-text span:nth-child(4) {
+        color: yellow;
+    }
+
+    .colorful-text span:nth-child(5) {
+        color: orange;
+    }
+
+    .colorful-text span:nth-child(6) {
+        color: purple;
+    }
+
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
