@@ -23,4 +23,6 @@ function show(){
 }
 function close(){
     mainMenu.style.top = '-100%';
+    document.querySelector('.logo').style.display = 'block';
+    document.querySelector('.openMenu').style.display = 'block';
 }
