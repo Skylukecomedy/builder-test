@@ -1,12 +1,12 @@
 .image {
-  width: 30px;
-  height: 20px;
+  width: 150px;
+  height: 100px;
 }
 
 .colorful-text span {
         position: relative;
-        top: 3000px; /* Adjust the top value to move the text vertically */
-        left: 3000px; /* Adjust the left value to move the text horizontally */
+        top: 800px; /* Adjust the top value to move the text vertically */
+        left: 800px; /* Adjust the left value to move the text horizontally */
     }
 
 /* Add the following CSS rules to change the color of each letter */
