@@ -1,6 +1,6 @@
 .image {
   width: 150px;
-  height: 100px;
+  height: auto;
 }
 
 .colorful-text span {
