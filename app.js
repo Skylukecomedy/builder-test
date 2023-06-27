@@ -25,6 +25,7 @@ function close(){
     mainMenu.style.top = '-100%';
     openMenu.style.display = 'block'; // Show the hamburger button
     closeMenu.style.display = 'none'; // Hide the close button
+    location.reload();
 }
     
 
