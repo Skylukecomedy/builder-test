@@ -34,12 +34,11 @@ body {
   
   .container {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
   
   ul {
@@ -116,4 +115,4 @@ body {
     .nav-toggle {
       display: block;
     }
-  }
+  
