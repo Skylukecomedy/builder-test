@@ -11,33 +11,33 @@
         color: red;
     }
     .colorful-text span:nth-child(1) {
-        color: red;
-    }
+    color: red;
+}
 
-    .colorful-text span:nth-child(2) {
-        color: yellow;
-    }
+.colorful-text span:nth-child(2) {
+    color: yellow;
+}
 
-    .colorful-text span:nth-child(3) {
-        color: green;
-    }
+.colorful-text span:nth-child(3) {
+    color: green;
+}
 
-    .colorful-text span:nth-child(5) {
-        color: blue;
-    }
+.colorful-text span:nth-child(5) {
+    color: blue;
+}
 
-    .colorful-text span:nth-child(6) {
-        color: orange;
-    }
+.colorful-text span:nth-child(6) {
+    color: orange;
+}
 
-    .colorful-text span:nth-child(7) {
-        color: purple;
-    }
+.colorful-text span:nth-child(7) {
+    color: purple;
+}
 
-    .colorful-text span:nth-child(4) {
-
-        color: green;
-    }
+.colorful-text span:nth-child(4),
+.colorful-text span:nth-child(8) {
+    color: green;
+}
 
 body {
     margin: 0;
