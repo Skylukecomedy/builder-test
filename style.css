@@ -1,44 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rainbow Animation</title>
+    <style>
+        @keyframes rainbow-animation {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+        
+        .colorful-text span {
+            animation: rainbow-animation 7s infinite;
+        }
+        
+        .word-spacing {
+            display: inline-block;
+            width: 5px; /* Adjust the width to add space between "SKY" and "LUKE" */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <h2 class="colorful-text">
+                    <span>S</span>
+                    <span>K</span>
+                    <span>Y</span> 
+                    <span class="word-spacing"></span>
+                    <span>L</span>
+                    <span>U</span>
+                    <span>K</span>
+                    <span>E</span>
+                </h2>
+                <div class="nav-toggle" id="navToggle">
+                    <img id="navClosed" class="navIcon" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg" alt="hamburger menu">
+                    <img id="navOpen" class="navIcon hidden" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg" alt="close hamburger">
+                </div>
+            </div>
+          
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <img src="4DDD8AE1-8D10-40CD-808A-19057EEF4C65.jpeg" alt="my profile picture" class="image">
+    <div class="social-icons">
+        <a href="https://www.facebook.com/skylukecomedy?mibextid=LQQJ4d" target="_blank">
+            <img src="70501623-B974-446C-AB6C-31A97B93ADFA.jpeg" alt="Facebook Icon" class="fbimage">
+        </a>
 
-.colorful-text span {
-        position: relative;
-        top: 15px; /* Adjust the top value to move the text vertically */
-        left: 100px; /* Adjust the left value to move the text horizontally */
-        font-size: 40px; /* Adjust the font size as desired */
-}
+        <a href="https://instagram.com/skylukecomedy?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+            <img src="904FF611-789D-41F9-8132-EFF92D345791.jpeg" alt="Instagram Icon" class="igimage">
+        </a>
+        
+        <a href="https://youtube.com/@SkyLukeComedy" target="_blank">
+            <img src="E66DB7C9-741B-44E8-89F0-835BF04B4BA9.jpeg" alt="YouTube Icon" class="ytimage">
+        </a>
+    </div>
 
-/* Add the following CSS rules to change the color of each */
-    .colorful-text span {
-        color: red;
-    }
-    .colorful-text span:nth-child(1) {
-    color: red;
-}
-
-.colorful-text span:nth-child(2) {
-    color: yellow;
-}
-
-.colorful-text span:nth-child(3) {
-    color: green;
-}
-
-.colorful-text span:nth-child(5) {
-    color: blue;
-}
-
-.colorful-text span:nth-child(6) {
-    color: orange;
-}
-
-.colorful-text span:nth-child(7) {
-    color: purple;
-}
-
-.colorful-text span:nth-child(4),
-.colorful-text span:nth-child(8) {
-    color: green;
-}
-
+    <script
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
