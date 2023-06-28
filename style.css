@@ -14,7 +14,7 @@
     }
 
     .colorful-text span:nth-child(2) {
-        color: blue;
+        color: yellow;
     }
 
     .colorful-text span:nth-child(3) {
@@ -22,7 +22,7 @@
     }
 
     .colorful-text span:nth-child(5) {
-        color: yellow;
+        color: blue;
     }
 
     .colorful-text span:nth-child(6) {
