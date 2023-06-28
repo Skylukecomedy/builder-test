@@ -12,6 +12,10 @@
         color: red;
     }
 
+    .colorful-text span:nth-child(1) {
+        color: red;
+    }
+
     .colorful-text span:nth-child(2) {
         color: blue;
     }
