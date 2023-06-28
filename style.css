@@ -20,15 +20,15 @@
         color: green;
     }
 
-    .colorful-text span:nth-child(4) {
+    .colorful-text span:nth-child(7) {
         color: yellow;
     }
 
-    .colorful-text span:nth-child(5) {
+    .colorful-text span:nth-child(8) {
         color: orange;
     }
 
-    .colorful-text span:nth-child(6) {
+    .colorful-text span:nth-child(9) {
         color: purple;
     }
 
