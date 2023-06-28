@@ -33,6 +33,10 @@
         color: purple;
     }
 
+    .colorful-text span:nth-child(8) {
+        color: green;
+    }
+
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
