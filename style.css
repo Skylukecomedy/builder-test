@@ -8,7 +8,7 @@
 
 /* Add the following CSS rules to change the color of each */
     .colorful-text span {
-        color: red;
+        color: lime;
     }
     .colorful-text span:nth-child(1) {
     color: lime;
