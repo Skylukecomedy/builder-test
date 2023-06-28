@@ -1,5 +1,4 @@
 
-
 .colorful-text span {
         position: relative;
         top: 15px; /* Adjust the top value to move the text vertically */
@@ -8,7 +7,9 @@
 }
 
 /* Add the following CSS rules to change the color of each */
-
+    .colorful-text span {
+        color: red;
+    }
     .colorful-text span:nth-child(1) {
         color: red;
     }
