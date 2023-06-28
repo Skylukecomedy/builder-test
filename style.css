@@ -7,10 +7,7 @@
         font-size: 40px; /* Adjust the font size as desired */
 }
 
-/* Add the following CSS rules to change the color of each letter */
-    .colorful-text span {
-        color: red;
-    }
+/* Add the following CSS rules to change the color of each */
 
     .colorful-text span:nth-child(1) {
         color: red;
