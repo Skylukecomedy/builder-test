@@ -24,15 +24,15 @@
         color: green;
     }
 
-    .colorful-text span:nth-child(6) {
+    .colorful-text span:nth-child(5) {
         color: yellow;
     }
 
-    .colorful-text span:nth-child(8) {
+    .colorful-text span:nth-child(6) {
         color: orange;
     }
 
-    .colorful-text span:nth-child(9) {
+    .colorful-text span:nth-child(7) {
         color: purple;
     }
 
