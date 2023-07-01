@@ -17,10 +17,12 @@
   margin: 0 10px; /* Adjust the horizontal spacing between icons */
 }
 
-.social-icons img {
-  width: 40px; /* Adjust the size of the icons */
-  height: 40px;
+
+  .social-icons a img {
+  width: 40px !important; /* Adjust the size of the icons */
+  height: 40px !important;
 }
+
 
 .centered-text {
   text-align: center;
