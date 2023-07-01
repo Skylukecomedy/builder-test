@@ -11,7 +11,7 @@
   padding: 0px;
   position: relative;
   height: 400px; /* Adjust the height of the colored section as needed */
-  margin-top: -15px; /* Adjust this value to remove the space */
+  margin-top: -13px; /* Adjust this value to remove the space */
 
 }
 
@@ -29,10 +29,19 @@
 }
 
 
-  .social-icons a img {
-  width: 40px !important; /* Adjust the size of the icons */
+  .social-icons a.fb img {
+  width: 40px !important; /* Adjust the size of the Facebook icon */
   height: 40px !important;
 }
+.social-icons a.ig img {
+  width: 30px !important; /* Adjust the size of the Twitter icon */
+  height: 30px !important;
+}
+.social-icons a.yt img {
+  width: 50px !important; /* Adjust the size of the Instagram icon */
+  height: 50px !important;
+}
+
 
 
 .centered-text {
