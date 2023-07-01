@@ -5,12 +5,7 @@
   height: 200px; /* Adjust the height of the colored section as needed */
 }
 
-.social-icons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 .social-icons a {
   margin-right: 10px; /* Adjust the spacing between icons */
