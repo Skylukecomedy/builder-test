@@ -80,20 +80,21 @@
 
 @keyframes glow-animation {
   0% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Transparent */
+    text-shadow: 0 0 5px #ff0000; /* Red */
   }
   25% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    text-shadow: 0 0 5px #00ff00; /* Green */
   }
   50% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    text-shadow: 0 0 5px #0000ff; /* Blue */
   }
   75% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    text-shadow: 0 0 5px #ffff00; /* Yellow */
   }
   100% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    text-shadow: 0 0 5px #ff00ff; /* Magenta */
   }
+
 }
 
 .colorful-text span {
