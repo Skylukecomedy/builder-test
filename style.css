@@ -10,7 +10,7 @@
   background-color: #FF0000; /* Replace with desired background color */
   padding: 20px;
   position: relative;
-   height: 200px; /* Adjust the height of the colored section as needed */
+   height: 400px; /* Adjust the height of the colored section as needed */
   margin-top: -15px; /* Adjust this value to remove the space */
  
   
@@ -37,7 +37,7 @@
 .igimage {
   width: 45px !important; /* Adjust the size of the Instagram icon */
   height: 45px !important;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .ytimage {
@@ -59,7 +59,7 @@
   font-weight: bold;
   color: white;
   margin-top: 0px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 
