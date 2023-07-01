@@ -75,51 +75,51 @@
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
-        animation: rainbow 1s linear infinite; /* Add the animation property */
+        animation: rainbow 8s linear infinite; /* Add the animation property */
 }
 
 .colorful-text span:nth-child(1) {
-    animation: rainbow 1s linear infinite; /* Add the animation property */
-color: red;
+    animation-delay: 0s; /* No delay for the first letter */
+    color: red;
 }
 
 .colorful-text span:nth-child(2) {
-    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the second letter */
-color: blue;
+    animation-delay: 1s; /* One-second delay for the second letter */
+    color: blue;
 }
 
 .colorful-text span:nth-child(3) {
-    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the third letter */
-color: green;
+    animation-delay: 2s; /* Two-second delay for the third letter */
+    color: green;
 }
 
 .colorful-text span:nth-child(4) {
-    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the fourth letter */
-color: yellow;
+    animation-delay: 3s; /* Three-second delay for the fourth letter */
+    color: yellow;
 }
 
 .colorful-text span:nth-child(5) {
-    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the fifth letter */
-color: orange;
+    animation-delay: 4s; /* Four-second delay for the fifth letter */
+    color: orange;
 }
 
 .colorful-text span:nth-child(6) {
-    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the sixth letter */
-color: purple;
+    animation-delay: 5s; /* Five-second delay for the sixth letter */
+    color: purple;
 }
 
 .colorful-text span:nth-child(7) {
-    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the seventh letter */
-color: magenta;
+    animation-delay: 6s; /* Six-second delay for the seventh letter */
+    color: magenta;
 }
 
 .colorful-text span:nth-child(8) {
-    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the eighth letter */
-color: red;
+    animation-delay: 7s; /* Seven-second delay for the eighth letter */
+    color: red;
 }
 
 @keyframes rainbow {
-    0% {
+     0% {
         color: red; /* Start with red */
     }
     14.29% {
