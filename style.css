@@ -33,14 +33,14 @@
 }
 
 .igimage {
-  width: 40px !important; /* Adjust the size of the Instagram icon */
-  height: 40px !important;
+  width: 45px !important; /* Adjust the size of the Instagram icon */
+  height: 45px !important;
   margin-left: 5px;
 }
 
 .ytimage {
-  width: 60px !important; /* Adjust the size of the YouTube icon */
-  height: 60px !important;
+  width: 65px !important; /* Adjust the size of the YouTube icon */
+  height: 65px !important;
   margin-left: 0px;
 }
 
