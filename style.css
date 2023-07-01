@@ -7,8 +7,19 @@
 
 
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-icons a {
-  margin-right: 10px; /* Adjust the spacing between icons */
+  margin: 0 10px; /* Adjust the horizontal spacing between icons */
+}
+
+.social-icons img {
+  width: 40px; /* Adjust the size of the icons */
+  height: 40px;
 }
 
 .centered-text {
