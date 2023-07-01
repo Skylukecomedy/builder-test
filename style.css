@@ -28,8 +28,8 @@
   margin: 0 10px; /* Adjust the horizontal spacing between icons */
 }
 .fbimage {
-  width: 30px !important; /* Adjust the size of the Facebook icon */
-  height: 30px !important;
+  width: 50px !important; /* Adjust the size of the Facebook icon */
+  height: 50px !important;
 }
 
 .igimage {
@@ -38,8 +38,8 @@
 }
 
 .ytimage {
-  width: 50px !important; /* Adjust the size of the YouTube icon */
-  height: 50px !important;
+  width: 60px !important; /* Adjust the size of the YouTube icon */
+  height: 60px !important;
 }
 
 
