@@ -1,3 +1,11 @@
+.image {
+  width: 460px;
+  height: auto;
+     margin-top: 0px; /* Adjust the top margin value to move the image down */
+     margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
+
+   }
+
 .colored-section {
   background-color: #FF0000; /* Replace with desired background color */
   padding: 0px;
