@@ -85,35 +85,35 @@
     }
     12.5% {
         color: yellow; /* Transition to yellow */
-        animation-delay: -1s; /* Apply a slight delay to the second letter */
+        animation-delay: 1s; /* Apply a slight delay to the second letter */
     }
     25% {
         color: green; /* Transition to green */
-        animation-delay: -2s; /* Apply a slight delay to the third letter */
+        animation-delay: 2s; /* Apply a slight delay to the third letter */
     }
     37.5% {
         color: blue; /* Transition to blue */
-        animation-delay: -3s; /* Apply a slight delay to the fourth letter */
+        animation-delay: 3s; /* Apply a slight delay to the fourth letter */
     }
     50% {
         color: orange; /* Transition to orange */
-        animation-delay: -4s; /* Apply a slight delay to the fifth letter */
+        animation-delay: 4s; /* Apply a slight delay to the fifth letter */
     }
     62.5% {
         color: purple; /* Transition to purple */
-        animation-delay: -5s; /* Apply a slight delay to the sixth letter */
+        animation-delay: 5s; /* Apply a slight delay to the sixth letter */
     }
     75% {
         color: green; /* Transition to green */
-        animation-delay: -6s; /* Apply a slight delay to the seventh letter */
+        animation-delay: 6s; /* Apply a slight delay to the seventh letter */
     }
     87.5% {
         color: red; /* Transition back to red */
-        animation-delay: -7s; /* Apply a slight delay to the eighth letter */
+        animation-delay: 7s; /* Apply a slight delay to the eighth letter */
     }
     100% {
         color: red; /* Transition back to red */
-        animation-delay: -8s; /* Apply a slight delay to complete the cycle */
+        animation-delay: 8s; /* Apply a slight delay to complete the cycle */
     }
 }
 
