@@ -7,6 +7,15 @@
   height: 200px; /* Adjust the height of the colored section as needed */
   
 }
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons a {
+  margin-right: 10px; /* Adjust the spacing between icons */
+}
+
 .centered-text {
   text-align: center;
   text-transform: uppercase;
