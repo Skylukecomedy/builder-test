@@ -35,12 +35,13 @@
 .igimage {
   width: 40px !important; /* Adjust the size of the Instagram icon */
   height: 40px !important;
+  margin-left: 5px;
 }
 
 .ytimage {
   width: 60px !important; /* Adjust the size of the YouTube icon */
   height: 60px !important;
-  margin-left: -10px;
+  margin-left: 0px;
 }
 
 
