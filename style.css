@@ -29,15 +29,15 @@
 }
 
 
-  .social-icons a.fbimage img {
+  .social-icons a.fbimage {
   width: 40px !important; /* Adjust the size of the Facebook icon */
   height: 40px !important;
 }
-.social-icons a.igimage img {
+.social-icons a.igimage {
   width: 50px !important; /* Adjust the size of the Twitter icon */
   height: 50px !important;
 }
-.social-icons a.ytimage img {
+.social-icons a.ytimage {
   width: 50px !important; /* Adjust the size of the Instagram icon */
   height: 50px !important;
 }
