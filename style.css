@@ -75,39 +75,42 @@
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
+        animation: rainbow 1s linear infinite; /* Add the animation property */
 }
 
-/* Add the following CSS rules to change the color of each */
-    .colorful-text span {
-        color: red;
+@keyframes rainbow {
+    0% {
+        color: red; /* Start with red */
+        animation-delay: 0s; /* No delay for the first letter */
     }
-    .colorful-text span:nth-child(1) {
-    color: red;
-}
-
-.colorful-text span:nth-child(2) {
-    color: yellow;
-}
-
-.colorful-text span:nth-child(3) {
-    color: green;
-}
-
-.colorful-text span:nth-child(5) {
-    color: blue;
-}
-
-.colorful-text span:nth-child(6) {
-    color: orange;
-}
-
-.colorful-text span:nth-child(7) {
-    color: purple;
-}
-
-.colorful-text span:nth-child(4),
-.colorful-text span:nth-child(8) {
-    color: green;
+    14% {
+        color: yellow; /* Transition to yellow */
+        animation-delay: -0.8s; /* Apply a slight delay to the second letter */
+    }
+    28% {
+        color: green; /* Transition to green */
+        animation-delay: -1.6s; /* Apply a slight delay to the third letter */
+    }
+    42% {
+        color: blue; /* Transition to blue */
+        animation-delay: -2.4s; /* Apply a slight delay to the fifth letter */
+    }
+    57% {
+        color: orange; /* Transition to orange */
+        animation-delay: -3.2s; /* Apply a slight delay to the sixth letter */
+    }
+    71% {
+        color: purple; /* Transition to purple */
+        animation-delay: -4s; /* Apply a slight delay to the seventh letter */
+    }
+    85% {
+        color: green; /* Transition to green */
+        animation-delay: -4.8s; /* Apply a slight delay to the fourth and eighth letters */
+    }
+    100% {
+        color: red; /* Transition back to red */
+        animation-delay: -5.6s; /* Apply a slight delay to complete the cycle */
+    }
 }
 
 body {
