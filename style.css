@@ -75,7 +75,7 @@
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
-        animation: rainbow 1s linear infinite; /* Add the animation property */
+        animation: rainbow 7s linear infinite; /* Add the animation property */
 }
 
 @keyframes rainbow {
@@ -83,33 +83,37 @@
         color: red; /* Start with red */
         animation-delay: 0s; /* No delay for the first letter */
     }
-    14% {
+    12.5% {
         color: yellow; /* Transition to yellow */
-        animation-delay: -0.8s; /* Apply a slight delay to the second letter */
+        animation-delay: -1s; /* Apply a slight delay to the second letter */
     }
-    28% {
+    25% {
         color: green; /* Transition to green */
-        animation-delay: -1.6s; /* Apply a slight delay to the third letter */
+        animation-delay: -2s; /* Apply a slight delay to the third letter */
     }
-    42% {
+    37.5% {
         color: blue; /* Transition to blue */
-        animation-delay: -2.4s; /* Apply a slight delay to the fifth letter */
+        animation-delay: -3s; /* Apply a slight delay to the fourth letter */
     }
-    57% {
+    50% {
         color: orange; /* Transition to orange */
-        animation-delay: -3.2s; /* Apply a slight delay to the sixth letter */
+        animation-delay: -4s; /* Apply a slight delay to the fifth letter */
     }
-    71% {
+    62.5% {
         color: purple; /* Transition to purple */
-        animation-delay: -4s; /* Apply a slight delay to the seventh letter */
+        animation-delay: -5s; /* Apply a slight delay to the sixth letter */
     }
-    85% {
+    75% {
         color: green; /* Transition to green */
-        animation-delay: -4.8s; /* Apply a slight delay to the fourth and eighth letters */
+        animation-delay: -6s; /* Apply a slight delay to the seventh letter */
+    }
+    87.5% {
+        color: red; /* Transition back to red */
+        animation-delay: -7s; /* Apply a slight delay to the eighth letter */
     }
     100% {
         color: red; /* Transition back to red */
-        animation-delay: -5.6s; /* Apply a slight delay to complete the cycle */
+        animation-delay: -8s; /* Apply a slight delay to complete the cycle */
     }
 }
 
