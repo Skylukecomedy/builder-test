@@ -11,7 +11,7 @@
   padding: 0px;
   position: relative;
   height: 400px; /* Adjust the height of the colored section as needed */
-  margin-top: -13px; /* Adjust this value to remove the space */
+  margin-top: -15px; /* Adjust this value to remove the space */
 
 }
 
@@ -28,8 +28,8 @@
   margin: 0 10px; /* Adjust the horizontal spacing between icons */
 }
 .fbimage {
-  width: 50px !important; /* Adjust the size of the Facebook icon */
-  height: 50px !important;
+  width: 40px !important; /* Adjust the size of the Facebook icon */
+  height: 40px !important;
 }
 
 .igimage {
@@ -40,6 +40,7 @@
 .ytimage {
   width: 60px !important; /* Adjust the size of the YouTube icon */
   height: 60px !important;
+  margin-left: -10px;
 }
 
 
