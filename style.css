@@ -84,37 +84,37 @@ color: red;
 }
 
 .colorful-text span:nth-child(2) {
-    animation: rainbow 1s linear infinite 1s; /* Add the animation property with a delay for the second letter */
+    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the second letter */
 color: blue;
 }
 
 .colorful-text span:nth-child(3) {
-    animation: rainbow 1s linear infinite 1s; /* Add the animation property with a delay for the third letter */
+    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the third letter */
 color: green;
 }
 
 .colorful-text span:nth-child(4) {
-    animation: rainbow 1s linear infinite 1s; /* Add the animation property with a delay for the fourth letter */
+    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the fourth letter */
 color: yellow;
 }
 
 .colorful-text span:nth-child(5) {
-    animation: rainbow 1s linear infinite 1s; /* Add the animation property with a delay for the fifth letter */
+    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the fifth letter */
 color: orange;
 }
 
 .colorful-text span:nth-child(6) {
-    animation: rainbow 1s linear infinite 1s; /* Add the animation property with a delay for the sixth letter */
+    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the sixth letter */
 color: purple;
 }
 
 .colorful-text span:nth-child(7) {
-    animation: rainbow 1s linear infinite 1s; /* Add the animation property with a delay for the seventh letter */
+    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the seventh letter */
 color: magenta;
 }
 
 .colorful-text span:nth-child(8) {
-    animation: rainbow 1s linear infinite 1s; /* Add the animation property with a delay for the eighth letter */
+    animation: rainbow 1s linear infinite 0s; /* Add the animation property with a delay for the eighth letter */
 color: red;
 }
 
