@@ -27,9 +27,19 @@
 .social-icons a {
   margin: 0 10px; /* Adjust the horizontal spacing between icons */
 }
- .social-icons a img {
-  width: 40px !important; /* Adjust the size of the icons */
+.fbimage {
+  width: 30px !important; /* Adjust the size of the Facebook icon */
+  height: 30px !important;
+}
+
+.igimage {
+  width: 40px !important; /* Adjust the size of the Instagram icon */
   height: 40px !important;
+}
+
+.ytimage {
+  width: 50px !important; /* Adjust the size of the YouTube icon */
+  height: 50px !important;
 }
 
 
