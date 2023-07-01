@@ -75,15 +75,15 @@
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
-        animation: rainbow 7s linear infinite; /* Add the animation property */
+        animation: rainbow 2s linear infinite; /* Add the animation property */
 }
 
 .colorful-text span:nth-child(1) {
-    animation: rainbow 7s linear infinite; /* Add the animation property */
+    animation: rainbow 2s linear infinite; /* Add the animation property */
 }
 
 .colorful-text span:nth-child(2) {
-    animation: rainbow 7s linear infinite 0.8s; /* Add the animation property with a delay for the second letter */
+    animation: rainbow 2s linear infinite 0.8s; /* Add the animation property with a delay for the second letter */
 }
 
 .colorful-text span:nth-child(3) {
