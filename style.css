@@ -10,7 +10,7 @@
   background-color: #FF0000; /* Replace with desired background color */
   padding: 20px;
   position: relative;
-   height: 400px; /* Adjust the height of the colored section as needed */
+   height: 200px; /* Adjust the height of the colored section as needed */
   margin-top: -15px; /* Adjust this value to remove the space */
  
   
@@ -41,8 +41,8 @@
 }
 
 .ytimage {
-  width: 65px !important; /* Adjust the size of the YouTube icon */
-  height: 65px !important;
+  width: 75px !important; /* Adjust the size of the YouTube icon */
+  height: 75px !important;
   margin-left: 0px;
 }
 
@@ -59,6 +59,7 @@
   font-weight: bold;
   color: white;
   margin-top: 0px;
+  font-size: 30px;
 }
 
 
