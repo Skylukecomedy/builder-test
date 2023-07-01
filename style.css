@@ -75,46 +75,46 @@
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
-        animation: rainbow 2s linear infinite; /* Add the animation property */
+        animation: rainbow 1s linear infinite; /* Add the animation property */
 }
 
 .colorful-text span:nth-child(1) {
-    animation: rainbow 2s linear infinite; /* Add the animation property */
+    animation: rainbow 1s linear infinite; /* Add the animation property */
 color: red;
 }
 
 .colorful-text span:nth-child(2) {
-    animation: rainbow 2s linear infinite 0.8s; /* Add the animation property with a delay for the second letter */
+    animation: rainbow 1s linear infinite 0.8s; /* Add the animation property with a delay for the second letter */
 color: blue;
 }
 
 .colorful-text span:nth-child(3) {
-    animation: rainbow 7s linear infinite 1.6s; /* Add the animation property with a delay for the third letter */
+    animation: rainbow 1s linear infinite 1.6s; /* Add the animation property with a delay for the third letter */
 color: green;
 }
 
 .colorful-text span:nth-child(4) {
-    animation: rainbow 7s linear infinite 2.4s; /* Add the animation property with a delay for the fourth letter */
+    animation: rainbow 1s linear infinite 2.4s; /* Add the animation property with a delay for the fourth letter */
 color: yellow;
 }
 
 .colorful-text span:nth-child(5) {
-    animation: rainbow 7s linear infinite 3.2s; /* Add the animation property with a delay for the fifth letter */
+    animation: rainbow 1s linear infinite 3.2s; /* Add the animation property with a delay for the fifth letter */
 color: orange;
 }
 
 .colorful-text span:nth-child(6) {
-    animation: rainbow 7s linear infinite 4s; /* Add the animation property with a delay for the sixth letter */
+    animation: rainbow 1s linear infinite 4s; /* Add the animation property with a delay for the sixth letter */
 color: purple;
 }
 
 .colorful-text span:nth-child(7) {
-    animation: rainbow 7s linear infinite 4.8s; /* Add the animation property with a delay for the seventh letter */
+    animation: rainbow 1s linear infinite 4.8s; /* Add the animation property with a delay for the seventh letter */
 color: magenta;
 }
 
 .colorful-text span:nth-child(8) {
-    animation: rainbow 7s linear infinite 5.6s; /* Add the animation property with a delay for the eighth letter */
+    animation: rainbow 1s linear infinite 5.6s; /* Add the animation property with a delay for the eighth letter */
 color: red;
 }
 
