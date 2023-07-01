@@ -1,7 +1,19 @@
+.colored-section {
+  background-color: #FF0000; /* Replace with desired background color */
+  padding: 20px;
+  position: relative;
+  top: 50px; /* Adjust the position as needed */
+}
+
+
+
 p.connect {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+
+
 .colorful-text span {
         position: relative;
         top: 15px; /* Adjust the top value to move the text vertically */
