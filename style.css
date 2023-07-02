@@ -179,7 +179,7 @@ body {
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 1rem;
-    
+    z-index: 3;
   }
   
   ul {
@@ -210,7 +210,7 @@ body {
     right: 1.7rem;
     top: 2.3rem;
     cursor: pointer;
-    
+    z-index: 3;
   }
   
   .nav-toggle img {
@@ -241,7 +241,7 @@ body {
     .container {
       flex-direction: column;
       align-items: flex-start;
-      
+      z-index: 3;
     }
   
     nav {
@@ -249,7 +249,7 @@ body {
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
-    
+    z-index: 3;
     }
   
     li {
@@ -264,6 +264,7 @@ body {
   
     .nav-toggle {
       display: block;
+      z-index: 3;
       
     }
   
