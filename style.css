@@ -48,6 +48,14 @@
   margin-left: 0px;
 }
 
+.things-to-click {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
 
 .contact-icon {
  color: white;
@@ -58,18 +66,11 @@ font-size: 20px;
 .photos {
   color: white;
   font-size: 20px;
-  margin-top: 30px !important; /* Adjust the margin-top value as needed */
+  margin-top: -30px !important; /* Adjust the margin-top value as needed */
 }
 
 
-.things-to-click {
-  font-size: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  margin-top: 20px;
-}
+
 
 .connect {
   font-size: 30px;
