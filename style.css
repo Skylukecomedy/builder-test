@@ -8,7 +8,7 @@
 
 .colored-section {
   background-color: #FF0000; /* Replace with desired background color */
-  padding: 150px;
+  padding: 80px;
   position: relative;
    height: 600px; /* Adjust the height of the colored section as needed */
   margin-top: 115px; /* Adjust this value to remove the space */
@@ -52,7 +52,7 @@
 .contact-icon {
  color: white;
 font-size: 20px;
-  text-transform: uppercase;
+  
 }
 
 .things-to-click {
