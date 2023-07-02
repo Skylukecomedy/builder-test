@@ -207,8 +207,8 @@ body {
   .nav-toggle {
     display: none;
     position: absolute;
-    right: 1.7rem;
-    top: 1rem;
+    right: 10rem;
+    top: 10rem;
     cursor: pointer;
     z-index: 3;
   }
