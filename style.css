@@ -227,7 +227,7 @@ body {
   }
   
   .open {
-    height: 400vh;
+    height: 100vh;
     
   }
   
@@ -239,15 +239,13 @@ body {
   /* Mobile */
   @media all and (max-width: 720px) {
     .container {
-      margin-top: 100px;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-start;
       z-index: 3;
     }
   
     nav {
-      margin-top: 0px;
-      height: 100px;
+      height: 0;
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
@@ -257,11 +255,11 @@ body {
     li {
       display: block;
       text-align: center;
-      padding: .7rem 0;
+      padding: 1.5rem 0;
     }
   
     li a {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   
     .nav-toggle {
