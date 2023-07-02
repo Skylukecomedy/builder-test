@@ -216,7 +216,7 @@ body {
   .nav-toggle img {
     width: 1.5rem;
     transition: 300ms all ease;
-    
+    z-index: 3;
     
   }
   
