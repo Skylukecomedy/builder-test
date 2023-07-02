@@ -68,7 +68,6 @@
         white-space: nowrap; /* Prevent line breaks within the text */
         display: flex;
         align-items: center;
-        justify-content: center;
         height: 100%;
 
  }
