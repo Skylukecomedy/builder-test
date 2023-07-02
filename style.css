@@ -12,8 +12,7 @@
   position: relative;
    height: 600px; /* Adjust the height of the colored section as needed */
   margin-top: 100px; /* Adjust this value to remove the space */
- display: flex;
-  flex-direction: column;
+ 
   
   
 
