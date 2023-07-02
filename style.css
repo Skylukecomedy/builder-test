@@ -227,7 +227,7 @@ body {
   }
   
   .open {
-    height: 100vh;
+    height: 400vh;
     
   }
   
@@ -245,7 +245,7 @@ body {
     }
   
     nav {
-      height: 0;
+      height: 100px;
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
@@ -255,7 +255,7 @@ body {
     li {
       display: block;
       text-align: center;
-      padding: 0rem 10;
+      padding: .3rem 10;
     }
   
     li a {
