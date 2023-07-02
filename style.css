@@ -50,17 +50,18 @@
 
 
 .contact-icon {
- 
-font-size: 10px;
+ color: white;
+font-size: 20px;
+  text-transform: uppercase;
 }
 
 .things-to-click {
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  margin-top: 10px;
+  margin-top: 0px;
   white-space: nowrap; /* Prevent line breaks within the text */
 }
 
