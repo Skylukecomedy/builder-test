@@ -60,7 +60,7 @@
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 25px;
   white-space: nowrap; /* Prevent line breaks within the text */
 }
