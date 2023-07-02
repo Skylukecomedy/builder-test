@@ -245,7 +245,7 @@ body {
     }
   
     nav {
-      height: 0;
+      height: 5;
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
@@ -255,11 +255,11 @@ body {
     li {
       display: block;
       text-align: center;
-      padding: 3rem 0;
+      padding: 5rem 0;
     }
   
     li a {
-      font-size: 3rem;
+      font-size: 1rem;
     }
   
     .nav-toggle {
