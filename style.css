@@ -165,7 +165,7 @@ font-size: 20px;
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-z-index: 3;
+
   }
   
   header {
@@ -179,13 +179,13 @@ z-index: 3;
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 1rem;
-    z-index: 3;
+    
   }
   
   ul {
     list-style-type: none;
     padding: 0;
-    z-index: 3;
+    
   }
   
   li {
@@ -210,23 +210,25 @@ z-index: 3;
     right: 1.7rem;
     top: 2.3rem;
     cursor: pointer;
-    z-index: 3;
+    
   }
   
   .nav-toggle img {
     width: 1.5rem;
     transition: 300ms all ease;
-    z-index: 3;
+    
+    
   }
   
   .nav-toggle:hover img {
     opacity: 0.6;
-    z-index: 3;
+    
+    
   }
   
   .open {
     height: 100vh;
-    z-index: 3;
+    
   }
   
   .hidden {
@@ -239,7 +241,7 @@ z-index: 3;
     .container {
       flex-direction: column;
       align-items: flex-start;
-      z-index: 3;
+      
     }
   
     nav {
@@ -247,7 +249,7 @@ z-index: 3;
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
-    z-index: 3;
+    
     }
   
     li {
@@ -262,6 +264,6 @@ z-index: 3;
   
     .nav-toggle {
       display: block;
-      z-index: 3;
+      
     }
   
