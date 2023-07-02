@@ -12,8 +12,9 @@
   position: relative;
    height: 600px; /* Adjust the height of the colored section as needed */
   margin-top: 100px; /* Adjust this value to remove the space */
- 
-  
+ display: flex;
+  flex-direction: column;
+  align-items: center;
   
 
 }
@@ -21,33 +22,61 @@
 
 
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.social-icons a {
+  margin: 10px; /* Adjust the horizontal spacing between icons */
+}
+.fbimage {
+  width: 40px !important; /* Adjust the size of the Facebook icon */
+  height: 40px !important;
+}
 
+.igimage {
+  width: 45px !important; /* Adjust the size of the Instagram icon */
+  height: 45px !important;
+  margin-left: 10px;
+}
+
+.ytimage {
+  width: 75px !important; /* Adjust the size of the YouTube icon */
+  height: 75px !important;
+  margin-left: 0px;
+}
 
 
 .contact-icon {
- color: black;
+ color: white;
 font-size: 20px;
-  margin-top: -100px !important; /* Adjust the margin-top value as needed */
-margin-bottom: -50px;
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 
 .photos {
-  color: black;
+  color: white;
   font-size: 20px;
-  margin-top: -100px !important; /* Adjust the margin-top value as needed */
-margin-bottom: -10px;
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 
 
-
+.things-to-click {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
 
 .connect {
   font-size: 30px;
-  color: black;
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 500px;
+  margin-top: 50px;
 }
   
 
