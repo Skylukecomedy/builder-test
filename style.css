@@ -52,13 +52,13 @@
 .contact-icon {
  color: white;
 font-size: 20px;
-  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
+  margin-top: -20px; !important; /* Adjust the margin-top value as needed */
 }
 
 .photos {
   color: white;
   font-size: 20px;
-  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
+  margin-top: 30px; !important; /* Adjust the margin-top value as needed */
 }
 
 
