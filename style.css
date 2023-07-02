@@ -54,18 +54,21 @@
   font-weight: bold;
   color: white;
   margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .contact-icon {
  color: white;
 font-size: 20px;
-  margin-top: -800px !important; /* Adjust the margin-top value as needed */
+  margin-top: 0px !important; /* Adjust the margin-top value as needed */
+margin-bottom: -10px;
 }
 
 .photos {
   color: white;
   font-size: 20px;
-  margin-top: 500px !important; /* Adjust the margin-top value as needed */
+  margin-top: 0px !important; /* Adjust the margin-top value as needed */
+margin-bottom: -10px;
 }
 
 
