@@ -7,17 +7,20 @@
    }
 
 .colored-section {
-  background-color: #FF0000; /* Replace with desired background color */
-  padding: 0px;
+  background-color: #FF0000;
+  padding: 0;
   position: relative;
-   min-height: 1000px; /* Adjust the height of the colored section as needed */
-  margin-top: 100px; /* Adjust this value to remove the space */
- display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 600px;
+  margin-top: 100px;
+  display: grid; /* Use CSS Grid */
+  grid-gap: 20px; /* Adjust the vertical spacing between elements */
+  place-items: center; /* Center the elements vertically and horizontally */
 }
+
 .things-to-click,
+.contact-icon,
+.photos,
+.dadjokes,
 .connect {
   color: white;
   text-align: center;
@@ -28,30 +31,22 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 50px;
 }
-.contact-container {
-  display: flex;
-flex-direction: column;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+
 .contact-icon,
 .photos,
 .dadjokes {
- color: white;
-font-size: 20px;
-  margin-top: 0; /* Adjust the margin-top value as needed */
+  font-size: 20px;
 }
 
 .connect {
   font-size: 30px;
-  color: white;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 50px;
 }
+
+
+
 .social-icons {
   display: flex;
   justify-content: center;
