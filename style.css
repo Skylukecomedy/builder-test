@@ -89,7 +89,7 @@ left: -30px;
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 90px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
-        
+        z-index: 2;
 }
 
 @keyframes glow-animation {
