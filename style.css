@@ -255,11 +255,11 @@ body {
     li {
       display: block;
       text-align: center;
-      padding: 5rem 0;
+      padding: 0rem 0;
     }
   
     li a {
-      font-size: 1rem;
+      font-size: 2rem;
     }
   
     .nav-toggle {
