@@ -1,7 +1,7 @@
 .image {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
-     margin-top: 0px; /* Adjust the top margin value to move the image down */
+     margin-top: 100px; /* Adjust the top margin value to move the image down */
      margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
 
    }
@@ -11,7 +11,7 @@
   padding: 150px;
   position: relative;
    height: 600px; /* Adjust the height of the colored section as needed */
-  margin-top: -15px; /* Adjust this value to remove the space */
+  margin-top: 115px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  margin-top: 0px;
+  margin-top: 100px;
   font-size: 25px;
   white-space: nowrap; /* Prevent line breaks within the text */
 }
