@@ -8,10 +8,10 @@
 
 .colored-section {
   background-color: #FF0000; /* Replace with desired background color */
-  padding: 200px;
+  
   position: relative;
    height: 400px; /* Adjust the height of the colored section as needed */
-  margin-top: 300px; /* Adjust this value to remove the space */
+  margin-top: 100px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
   align-items: center;
