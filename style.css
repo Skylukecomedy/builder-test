@@ -70,45 +70,73 @@
 
 
 
-.colorful-text span {
+.colorful-text {
         position: relative;
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
+        
 }
 
-/* Add the following CSS rules to change the color of each */
-    .colorful-text span {
-        color: red;
-    }
-    .colorful-text span:nth-child(1) {
-    color: red;
+@keyframes glow-animation {
+  0% {
+    text-shadow: 0 0 5px #ff0000; /* Red */
+    
+  }
+  25% {
+    text-shadow: 0 0 5px #00ff00; /* Green */
+    
+  }
+  50% {
+    text-shadow: 0 0 5px #0000ff; /* Blue */
+   
+  }
+  75% {
+    text-shadow: 0 0 5px #ffff00; /* Yellow */
+    
+  }
+  100% {
+    text-shadow: 0 0 5px #ff00ff; /* Magenta */
+    
+  }
+}
+.colorful-text span:nth-child(1) {
+  animation: glow-animation 2s linear infinite;
 }
 
 .colorful-text span:nth-child(2) {
-    color: yellow;
+  animation: glow-animation 2s linear infinite -0.5s; /* Add an offset of 0.5s */
 }
 
 .colorful-text span:nth-child(3) {
-    color: green;
+  animation: glow-animation 2s linear infinite -1s; /* Add an offset of 1s */
+}
+.colorful-text span:nth-child(4) {
+  animation: glow-animation 2s linear infinite -1.5s;
 }
 
 .colorful-text span:nth-child(5) {
-    color: blue;
+  animation: glow-animation 2s linear infinite -2s; /* Add an offset of 0.5s */
 }
 
 .colorful-text span:nth-child(6) {
-    color: orange;
+  animation: glow-animation 2s linear infinite -2.5s; /* Add an offset of 1s */
 }
 
 .colorful-text span:nth-child(7) {
-    color: purple;
+  animation: glow-animation 2s linear infinite -3s; /* Add an offset of 1s */
 }
 
-.colorful-text span:nth-child(4),
 .colorful-text span:nth-child(8) {
-    color: green;
+  animation: glow-animation 2s linear infinite -3.5s; /* Add an offset of 1s */
 }
+
+
+
+.colorful-text span {
+  animation: glow-animation 2s linear infinite;
+}
+
 
 body {
     margin: 0;
