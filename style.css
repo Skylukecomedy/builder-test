@@ -165,11 +165,11 @@ font-size: 20px;
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-
+z-index: 3;
   }
   
   header {
-    background: #background: #ffffff;
+   background: #background: #ffffff;
   }
   
   .container {
@@ -185,6 +185,7 @@ body {
   ul {
     list-style-type: none;
     padding: 0;
+    z-index: 3;
   }
   
   li {
@@ -220,10 +221,12 @@ body {
   
   .nav-toggle:hover img {
     opacity: 0.6;
+    z-index: 3;
   }
   
   .open {
     height: 100vh;
+    z-index: 3;
   }
   
   .hidden {
