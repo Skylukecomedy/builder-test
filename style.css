@@ -246,7 +246,7 @@ body {
   
     nav {
       height: 0;
-      width: 50%;
+      width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
     z-index: 3;
