@@ -1,4 +1,4 @@
- .image {
+.image {
   width: 459px;
   height: auto;
      margin-top: 0px; /* Adjust the top margin value to move the image down */
@@ -70,74 +70,45 @@
 
 
 
-.colorful-text {
+.colorful-text span {
         position: relative;
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
-        
 }
 
-@keyframes glow-animation {
-  0% {
-    text-shadow: 0 0 5px #ff0000; /* Red */
-    
-  }
-  25% {
-    text-shadow: 0 0 5px #00ff00; /* Green */
-    
-  }
-  50% {
-    text-shadow: 0 0 5px #0000ff; /* Blue */
-   
-  }
-  75% {
-    text-shadow: 0 0 5px #ffff00; /* Yellow */
-    
-  }
-  100% {
-    text-shadow: 0 0 5px #ff00ff; /* Magenta */
-    
-  }
-}
-.colorful-text span:nth-child(1) {
-  animation: glow-animation 2s linear infinite;
+/* Add the following CSS rules to change the color of each */
+    .colorful-text span {
+        color: red;
+    }
+    .colorful-text span:nth-child(1) {
+    color: red;
 }
 
 .colorful-text span:nth-child(2) {
-  animation: glow-animation 2s linear infinite -0.5s; /* Add an offset of 0.5s */
+    color: yellow;
 }
 
 .colorful-text span:nth-child(3) {
-  animation: glow-animation 2s linear infinite -1s; /* Add an offset of 1s */
-}
-.colorful-text span:nth-child(4) {
-  animation: glow-animation 2s linear infinite -1.5s;
+    color: green;
 }
 
 .colorful-text span:nth-child(5) {
-  animation: glow-animation 2s linear infinite -2s; /* Add an offset of 0.5s */
+    color: blue;
 }
 
 .colorful-text span:nth-child(6) {
-  animation: glow-animation 2s linear infinite -2.5s; /* Add an offset of 1s */
+    color: orange;
 }
 
 .colorful-text span:nth-child(7) {
-  animation: glow-animation 2s linear infinite -3s; /* Add an offset of 1s */
+    color: purple;
 }
 
+.colorful-text span:nth-child(4),
 .colorful-text span:nth-child(8) {
-  animation: glow-animation 2s linear infinite -3.5s; /* Add an offset of 1s */
+    color: green;
 }
-
-
-
-.colorful-text span {
-  animation: glow-animation 2s linear infinite;
-}
-
-
 
 body {
     margin: 0;
