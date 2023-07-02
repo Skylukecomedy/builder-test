@@ -178,7 +178,7 @@ body {
     align-items: center;
     max-width: 60rem;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 20rem;
     z-index: 3;
   }
   
@@ -190,7 +190,7 @@ body {
   
   li {
     display: inline-block;
-    padding: 0 1.25rem;
+    padding: 0 10rem;
   }
   
   li a {
@@ -214,7 +214,7 @@ body {
   }
   
   .nav-toggle img {
-    width: 1.5rem;
+    width: 5rem;
     transition: 300ms all ease;
     z-index: 3;
     
@@ -245,7 +245,7 @@ body {
     }
   
     nav {
-      height: 0;
+      height: 3;
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
