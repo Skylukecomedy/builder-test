@@ -10,7 +10,7 @@
   background-color: #FF0000; /* Replace with desired background color */
   padding: 0px;
   position: relative;
-   height: 400px; /* Adjust the height of the colored section as needed */
+   height: 600px; /* Adjust the height of the colored section as needed */
   margin-top: 100px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
 .contact-icon {
  color: white;
 font-size: 20px;
-  margin-top: -20px;
+  margin-top: -50px;
   
 }
 
