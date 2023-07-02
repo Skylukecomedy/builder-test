@@ -10,10 +10,10 @@
   background-color: #FF0000;
   padding: 0;
   position: relative;
-  height: 600px;
+  height: 800px;
   margin-top: 100px;
   display: grid; /* Use CSS Grid */
-  grid-gap: 20px; /* Adjust the vertical spacing between elements */
+  grid-gap: 5px; /* Adjust the vertical spacing between elements */
   place-items: center; /* Center the elements vertically and horizontally */
 }
 
