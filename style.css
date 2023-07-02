@@ -176,7 +176,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 200rem;
+    max-width: 60rem;
     margin: 0 auto;
     padding: 0 10rem;
     z-index: 3;
@@ -184,13 +184,13 @@ body {
   
   ul {
     list-style-type: none;
-    padding: 10;
+    padding: 0;
     
   }
   
   li {
     display: inline-block;
-    padding: 0 10rem;
+    padding: 0 1.25rem;
   }
   
   li a {
@@ -214,7 +214,7 @@ body {
   }
   
   .nav-toggle img {
-    width:5rem;
+    width: 1.5rem;
     transition: 300ms all ease;
     z-index: 3;
     
@@ -227,7 +227,7 @@ body {
   }
   
   .open {
-    height: 500vh;
+    height: 100vh;
     
   }
   
@@ -245,8 +245,8 @@ body {
     }
   
     nav {
-      height: 10;
-      width: 10%;
+      height: 0;
+      width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
     z-index: 3;
@@ -255,11 +255,11 @@ body {
     li {
       display: block;
       text-align: center;
-      padding: 5rem 0;
+      padding: 1.5rem 0;
     }
   
     li a {
-      font-size: 5rem;
+      font-size: 1.4rem;
     }
   
     .nav-toggle {
