@@ -100,6 +100,38 @@
     color: #ff00ff; /* Magenta */
   }
 }
+.colorful-text span:nth-child(1) {
+  animation: glow-animation 2s linear infinite;
+}
+
+.colorful-text span:nth-child(2) {
+  animation: glow-animation 2s linear infinite 0.5s; /* Add an offset of 0.5s */
+}
+
+.colorful-text span:nth-child(3) {
+  animation: glow-animation 2s linear infinite 1s; /* Add an offset of 1s */
+}
+.colorful-text span:nth-child(4) {
+  animation: glow-animation 2s linear infinite 1.5s;
+}
+
+.colorful-text span:nth-child(5) {
+  animation: glow-animation 2s linear infinite 2s; /* Add an offset of 0.5s */
+}
+
+.colorful-text span:nth-child(6) {
+  animation: glow-animation 2s linear infinite 2.5s; /* Add an offset of 1s */
+}
+
+.colorful-text span:nth-child(7) {
+  animation: glow-animation 2s linear infinite 3s; /* Add an offset of 1s */
+}
+
+.colorful-text span:nth-child(8) {
+  animation: glow-animation 2s linear infinite 3.5s; /* Add an offset of 1s */
+}
+
+
 
 .colorful-text span {
   animation: glow-animation 2s linear infinite;
