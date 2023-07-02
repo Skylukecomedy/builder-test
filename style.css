@@ -31,29 +31,30 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: auto;
+  margin-bottom: 50px;
 }
 .contact-icon {
  color: white;
 font-size: 20px;
-  margin-top: auto; /* Adjust the margin-top value as needed */
+  margin-top: 0; /* Adjust the margin-top value as needed */
 }
 .photos {
   color: white;
   font-size: 20px;
-  margin-top: auto; /* Adjust the margin-top value as needed */
+  margin-top: 10px; /* Adjust the margin-top value as needed */
+  margin-bottom: 10px;
 }
 .dadjokes {
   color: white;
   font-size: 20px;
-  margin-top: auto;
+  margin-top: 10px;
 }
 .connect {
   font-size: 30px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: auto;
+  margin-top: 50px;
 }
 .social-icons {
   display: flex;
