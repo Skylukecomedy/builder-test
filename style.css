@@ -60,6 +60,7 @@
   color: white;
   margin-top: 0px;
   font-size: 25px;
+  white-space: nowrap; /* Prevent line breaks within the text */
 }
 
 
