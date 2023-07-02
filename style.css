@@ -41,20 +41,20 @@ font-size: 20px;
 .photos {
   color: white;
   font-size: 20px;
-  margin-top: 10px; /* Adjust the margin-top value as needed */
-  margin-bottom: 10px;
+  margin-top: 0; /* Adjust the margin-top value as needed */
+  margin-bottom: 0;
 }
 .dadjokes {
   color: white;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 0;
 }
 .connect {
   font-size: 30px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 0;
 }
 .social-icons {
   display: flex;
