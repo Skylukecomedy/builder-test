@@ -85,7 +85,7 @@ font-size: 20px;
 
 .white-box {
   position: fixed;
-  top: 30px;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100px; /* Adjust the height of the white box as needed */
