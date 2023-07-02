@@ -10,7 +10,7 @@
   background-color: #FF0000; /* Replace with desired background color */
   padding: 0px;
   position: relative;
-   height: 400px; /* Adjust the height of the colored section as needed */
+   height: 600px; /* Adjust the height of the colored section as needed */
   margin-top: 100px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
@@ -178,19 +178,19 @@ body {
     align-items: center;
     max-width: 60rem;
     margin: 0 auto;
-    padding: 0 20rem;
+    padding: 0 1rem;
     z-index: 3;
   }
   
   ul {
     list-style-type: none;
-    padding: 30;
+    padding: 0;
     
   }
   
   li {
     display: inline-block;
-    padding: 0 10rem;
+    padding: 0 1.25rem;
   }
   
   li a {
@@ -214,7 +214,7 @@ body {
   }
   
   .nav-toggle img {
-    width: 5rem;
+    width: 1.5rem;
     transition: 300ms all ease;
     z-index: 3;
     
@@ -245,7 +245,7 @@ body {
     }
   
     nav {
-      height: 3;
+      height: 0;
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
@@ -255,11 +255,11 @@ body {
     li {
       display: block;
       text-align: center;
-      padding: 1rem 0;
+      padding: 1.5rem 0;
     }
   
     li a {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
   
     .nav-toggle {
