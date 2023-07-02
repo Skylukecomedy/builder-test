@@ -10,7 +10,7 @@
   background-color: #FF0000; /* Replace with desired background color */
   padding: 0px;
   position: relative;
-   height: 400px; /* Adjust the height of the colored section as needed */
+   height: 600px; /* Adjust the height of the colored section as needed */
   margin-top: 100px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
@@ -207,8 +207,8 @@ body {
   .nav-toggle {
     display: none;
     position: absolute;
-    right: 25rem;
-    top: 1rem;
+    right: 20rem;
+    top: 2rem;
     cursor: pointer;
     z-index: 3;
   }
