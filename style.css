@@ -1,7 +1,7 @@
 .image {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
-     margin-top: 60px; /* Adjust the top margin value to move the image down */
+     margin-top: 40px; /* Adjust the top margin value to move the image down */
      margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
 
    }
