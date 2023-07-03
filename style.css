@@ -19,13 +19,13 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  width: 25px;
-  height: 10px;
+  width: 50px;
+  height: 20px;
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
   font-family: Arial, sans-serif; /* Change the font family as desired */
   font-size: 16px; /* Change the font size as desired */
