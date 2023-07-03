@@ -7,53 +7,16 @@
    }
 
 .colored-section {
-  background-color: #FF0000;
-  padding: 0;
+  background-color: #FF0000; /* Replace with desired background color */
+  padding: 0px;
   position: relative;
-  height: 400px;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.things-to-click,
-.contact-icon,
-.photos,
-.dadjokes,
-.connect {
-  color: white;
-  text-align: center;
-}
-
-.things-to-click {
-  font-size: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0; /* Maintain the distance between things to click and connect */
-}
-
-.contact-group {
-  display: flex;
+   height: 600px; /* Adjust the height of the colored section as needed */
+  margin-top: 100px; /* Adjust this value to remove the space */
+ display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: -15px; /* Adjust the vertical spacing between the grouped elements */
-}
+  
 
-.contact-icon,
-.photos,
-.dadjokes {
-  font-size: 20px;
-  margin-top: -15px; /* Remove auto margin */
-}
-
-.connect {
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 0; /* Maintain the distance between things to click and connect */
 }
 
 
@@ -86,11 +49,35 @@
 }
 
 
+.contact-icon {
+ color: white;
+font-size: 20px;
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
+}
+
+.photos {
+  color: white;
+  font-size: 20px;
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
+}
 
 
+.things-to-click {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin-top: 25px;
+}
 
-
-
+.connect {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
   
 
 
@@ -220,7 +207,7 @@ body {
   .nav-toggle {
     display: none;
     position: absolute;
-    right: 24rem;
+    right: 22rem;
     top: 2rem;
     cursor: pointer;
     z-index: 3;
@@ -252,7 +239,6 @@ body {
   /* Mobile */
   @media all and (max-width: 720px) {
     .container {
-      margin-top: 100px;
       flex-direction: column;
       align-items: flex-start;
       z-index: 3;
@@ -265,21 +251,8 @@ body {
       transition: 250ms height ease-in-out;
     z-index: 3;
     }
-
- .colored-section li {
-    padding: 0; /* Remove padding for elements within colored section */
-  }
-    .contact-icon li {
-      padding: 0;
-    }
-    .photos li {
-      padding: 0;
-    }
-    .dadjokes li {
-      padding: 0;
-    }
-    
-   li {
+  
+    li {
       display: block;
       text-align: center;
       padding: 1.5rem 0;
@@ -288,8 +261,6 @@ body {
     li a {
       font-size: 1.4rem;
     }
-  
-  
   
     .nav-toggle {
       display: block;
