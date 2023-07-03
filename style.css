@@ -19,8 +19,8 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  width: 50px;
-  height: 20px;
+  width: auto;
+  height: auto;
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
