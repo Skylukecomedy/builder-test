@@ -259,6 +259,7 @@ body {
     }
 
     .colored-section li {
+      margin-top: -10px;
     padding: 0; /* Remove padding for elements within colored section */
   }
   
