@@ -25,7 +25,7 @@ input[type="submit"] {
   background-color: #4CAF50;
   color: white;
   border: none;
-  border-radius: 0px;
+  border-radius: 0 !important;
   cursor: pointer;
   font-family: Arial, sans-serif; /* Change the font family as desired */
   font-size: 16px; /* Change the font size as desired */
