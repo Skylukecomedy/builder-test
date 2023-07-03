@@ -61,6 +61,11 @@ font-size: 20px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 
+.dadjokes {
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+}
 
 .things-to-click {
   font-size: 25px;
@@ -239,6 +244,7 @@ body {
   /* Mobile */
   @media all and (max-width: 720px) {
     .container {
+      margin-top: 100px;
       flex-direction: column;
       align-items: flex-start;
       z-index: 3;
@@ -251,6 +257,10 @@ body {
       transition: 250ms height ease-in-out;
     z-index: 3;
     }
+
+    .colored-section li {
+    padding: 0; /* Remove padding for elements within colored section */
+  }
   
     li {
       display: block;
