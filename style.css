@@ -1,7 +1,7 @@
 .image {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
-     margin-top: 100px; /* Adjust the top margin value to move the image down */
+     margin-top: 60px; /* Adjust the top margin value to move the image down */
      margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
 
    }
@@ -10,7 +10,7 @@
   background-color: #FF0000; /* Replace with desired background color */
   padding: 0px;
   position: relative;
-   height: 600px; /* Adjust the height of the colored section as needed */
+   height: 500px; /* Adjust the height of the colored section as needed */
   margin-top: 90px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
- margin-bottom: -20px !important;
+ margin-top: -20px !important;
 }
 
 .social-icons a {
