@@ -38,7 +38,7 @@ input[type="submit"]:hover {
 .bio-text {
   
 font-family: Helvetica, Arial, sans-serif;
-font-size: 13
+font-size: 13;
   margin-left: 40px;
   margin-right: 40px;
 }
