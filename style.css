@@ -168,6 +168,11 @@ font-size: 22px;
         z-index: 2;
 }
 
+.colorful-text a {
+  color: black; /* Set the desired text color */
+  text-decoration: none; /* Remove any underline or decorations */
+}
+
 @keyframes glow-animation {
   0% {
     text-shadow: 0 0 5px #ff0000; /* Red */
