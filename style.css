@@ -35,6 +35,9 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
+.bio-text {
+font-size: 13
+}
 
 .image {
   width: 100vw; /* Takes up the full width of the viewport */
