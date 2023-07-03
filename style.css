@@ -266,15 +266,17 @@ body {
     z-index: 3;
     }
   
-    li {
+   li {
       display: block;
       text-align: center;
-      padding: 5rem 5;
+      padding: 1.5rem 0;
     }
   
     li a {
       font-size: 1.4rem;
     }
+  
+  
   
     .nav-toggle {
       display: block;
