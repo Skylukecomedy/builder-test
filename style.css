@@ -93,6 +93,16 @@ input[type="submit"]:hover {
 font-size: 22px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
+.merch { 
+  color: white;
+font-size: 22px;
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
+}
+.terms {
+  color: white;
+font-size: 22px;
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
+}
 
 .photos {
   color: white;
