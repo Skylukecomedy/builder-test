@@ -265,7 +265,11 @@ body {
       transition: 250ms height ease-in-out;
     z-index: 3;
     }
-  
+
+ .colored-section li {
+    padding: 0; /* Remove padding for elements within colored section */
+  }
+    
    li {
       display: block;
       text-align: center;
