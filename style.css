@@ -10,11 +10,12 @@
   background-color: #FF0000;
   padding: 0;
   position: relative;
-  height: 800px;
+  height: 600px;
   margin-top: 100px;
-  display: grid; /* Use CSS Grid */
-  grid-gap: 5px; /* Adjust the vertical spacing between elements */
-  place-items: center; /* Center the elements vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .things-to-click,
@@ -31,19 +32,30 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 50px; /* Maintain the distance between things to click and connect */
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust the vertical spacing between the grouped elements */
 }
 
 .contact-icon,
 .photos,
 .dadjokes {
   font-size: 20px;
+  margin-top: 0; /* Remove auto margin */
 }
 
 .connect {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 50px; /* Maintain the distance between things to click and connect */
 }
+
 
 
 
