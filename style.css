@@ -267,7 +267,7 @@ body {
     }
 
  .colored-section li {
-    padding: 1; /* Remove padding for elements within colored section */
+    padding: 0; /* Remove padding for elements within colored section */
   }
     
    li {
