@@ -52,24 +52,24 @@
 
 .contact-icon {
  color: white;
-font-size: 20px;
+font-size: 22px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 
 .photos {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 
 .dadjokes {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 0;
 }
 
 .things-to-click {
-  font-size: 25px;
+  font-size: 28px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -79,7 +79,7 @@ font-size: 20px;
 }
 
 .connect {
-  font-size: 30px;
+  font-size: 28px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
