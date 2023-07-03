@@ -103,8 +103,8 @@ font-size: 20px;
 
 .colorful-text {
         position: fixed;
-        top: 15px; /* Adjust the top value to move the text vertically */
-        left: 90px; /* Adjust the left value to move the text horizontally */
+        top: 20px; /* Adjust the top value to move the text vertically */
+        left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
         z-index: 2;
 }
