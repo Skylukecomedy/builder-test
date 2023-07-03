@@ -269,6 +269,15 @@ body {
  .colored-section li {
     padding: 0; /* Remove padding for elements within colored section */
   }
+    .contact-icon li {
+      padding: 0;
+    }
+    .photos li {
+      padding: 0;
+    }
+    .dadjokes li {
+      padding: 0;
+    }
     
    li {
       display: block;
