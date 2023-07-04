@@ -46,6 +46,17 @@ input[type="submit"]:hover {
   margin-right: auto;
   text-align: center;
 }
+.terms-top {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 140px;
+  margin-bottom: -80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 
 .bio-text {
@@ -56,6 +67,15 @@ font-size: 22px;
   margin-right: 40px;
   word-spacing: 2px;
 }
+.terms-text {
+  
+font-family: Helvetica, Arial, sans-serif;
+font-size: 22px;
+  margin-left: 40px;
+  margin-right: 40px;
+  word-spacing: 2px;
+}
+
 .highlight {
   font-weight: bold;
 }
@@ -74,6 +94,14 @@ font-size: 22px;
      margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
 
    }
+.terms-image {
+width: 100vw; /* Takes up the full width of the viewport */
+  height: auto;
+     margin-top: 0px; /* Adjust the top margin value to move the image down */
+     margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
+
+   }
+  
 
 .colored-section {
   background-color: #FF0000; /* Replace with desired background color */
