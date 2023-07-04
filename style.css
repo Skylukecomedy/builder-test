@@ -41,6 +41,7 @@ input[type="submit"]:hover {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 100px;
+  margin-bottom: -50px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -69,7 +70,7 @@ font-size: 22px;
 .bio-image {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
-     margin-top: 40px; /* Adjust the top margin value to move the image down */
+     margin-top: 0px; /* Adjust the top margin value to move the image down */
      margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
 
    }
