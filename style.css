@@ -140,7 +140,7 @@ font-size: 22px;
 .bio-image {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
-     margin-top: -20px; /* Adjust the top margin value to move the image down */
+     margin-top: 0px; /* Adjust the top margin value to move the image down */
      margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
 
    }
