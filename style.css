@@ -35,6 +35,13 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
+.bio-top {
+  font-family: Helvetica, Arial, sans-serif;
+font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
 .bio-text {
   
 font-family: Helvetica, Arial, sans-serif;
