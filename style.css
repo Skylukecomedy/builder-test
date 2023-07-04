@@ -60,9 +60,8 @@ input[type="submit"]:hover {
 
 .contact-email {
 font-family: Helvetica, Arial, sans-serif;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-top: 140px;
   margin-bottom: -80px;
   margin-left: auto;
@@ -72,9 +71,8 @@ font-family: Helvetica, Arial, sans-serif;
   
 .contact-fb {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-top: 140px;
   margin-bottom: -80px;
   margin-left: auto;
