@@ -13,7 +13,7 @@ label {
 
 input[type="email"] {
   width: 350px; /* Adjust the width as needed */
-  height: 50px;
+  height: 40px;
   padding: 10px;
   margin-bottom: 10px;
 }
