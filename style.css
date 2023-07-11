@@ -112,15 +112,16 @@ font-family: Helvetica, Arial, sans-serif;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 25px;
   font-weight: bold;
-  margin-top: 140px;
+  margin-top: 30px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+ 
 }
 .contact-text {
   font-family: Helvetica, Arial, sans-serif;
-font-size: 22px;
+  font-size: 22px;
   margin-left: 40px;
   margin-right: 40px;
   word-spacing: 1px;
