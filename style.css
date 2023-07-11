@@ -30,10 +30,11 @@
 }
 
 .grid-item {
-  flex: 1;
+  flex-grow: 1;
   margin: 10px;
-  width: 100vw; /* Takes up the full width of the viewport */
+  max-width: calc(100vw / 3 - 20px); /* Calculates the maximum width for each item */
   height: auto;
+
 }
 
 .single-picture {
