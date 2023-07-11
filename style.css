@@ -85,8 +85,8 @@ width: 100vw; /* Takes up the full width of the viewport */
 }
   
 .email-field{
-  width: 350px;
-  height: 60px;
+  width: 400px;
+  height: 80px;
 }
 
 .signup-button{
