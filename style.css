@@ -87,6 +87,14 @@ newsletter-text{
   height: 30px;
 }
 
+.signup-button{
+background-color: black; 
+color: white; 
+border: none;
+  font-size: 28px;
+padding: 10px 20px;
+}
+
 .contact-email {
 font-family: Helvetica, Arial, sans-serif;
   font-size: 25px;
