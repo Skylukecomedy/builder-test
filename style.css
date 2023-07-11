@@ -32,6 +32,8 @@
 .grid-item {
   flex: 1;
   margin: 10px;
+  width: 100vw; /* Takes up the full width of the viewport */
+  height: auto;
 }
 
 .single-picture {
