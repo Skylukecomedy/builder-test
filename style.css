@@ -26,15 +26,18 @@
 
 .grid-row {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .grid-item {
-  flex-grow: 1;
+  flex-basis: calc(33.33% - 20px);
   margin: 10px;
-  max-width: calc(100vw / 3 - 20px); /* Calculates the maximum width for each item */
   height: auto;
+}
 
+.auto-width {
+  flex-grow: 1;
+  max-width: 100%;
 }
 
 .single-picture {
