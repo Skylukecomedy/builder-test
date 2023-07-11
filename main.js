@@ -24,3 +24,19 @@ window.addEventListener(
   },
   { passive: false }
 );
+
+javascript
+function openFullscreen(imageUrl) {
+  const fullscreenContainer = document.getElementById("fullscreen-container");
+  const fullscreenImage = document.getElementById("fullscreen-image");
+
+  fullscreenImage.src = imageUrl;
+  fullscreenContainer.style.display = "flex";
+}
+
+function closeFullscreen() {
+  const fullscreenContainer = document.getElementById("fullscreen-container");
+
+  fullscreenContainer.style.display = "none";
+}
+
