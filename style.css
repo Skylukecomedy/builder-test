@@ -1,5 +1,39 @@
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
 
+input[type="email"] {
+  width: 400px; /* Adjust the width as needed */
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 !important;
+  cursor: pointer;
+  font-family: Arial, sans-serif; /* Change the font family as desired */
+  font-size: 16px; /* Change the font size as desired */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
 .bio-top {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 40px;
