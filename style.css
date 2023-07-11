@@ -24,6 +24,21 @@
   max-height: 100%;
 }
 
+.grid-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-item {
+  flex: 1;
+  margin: 10px;
+}
+
+.single-picture {
+  margin: 10px;
+}
+
+
 form {
   margin-top: 50px;
   display: flex;
