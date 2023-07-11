@@ -1,16 +1,19 @@
-.image1 {
-  width: 100vw; /* Takes up the full width of the viewport */
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.image1,
+.image2,
+.image3 {
+  width: 100%;
   height: auto;
 }
 
-.image2 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
-}
-.image3 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
-}
+
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
