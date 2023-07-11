@@ -12,8 +12,8 @@ label {
 }
 
 input[type="email"] {
-  width: 400px; /* Adjust the width as needed */
-  height: 30px;
+  width: 350px; /* Adjust the width as needed */
+  height: 50px;
   padding: 10px;
   margin-bottom: 10px;
 }
