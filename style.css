@@ -77,19 +77,19 @@ width: 100vw; /* Takes up the full width of the viewport */
 
    }
 
-.newsletter-text{
+.newsletter-text {
   color: white;
   font-size: 28px;
   margin-top: -30px;
   font-weight: bold;
 }
   
-.email-field{
-  width: 400px;
-  height: 100px;
+.email-field {
+  width: 600px;
+  height: 200px;
 }
 
-.signup-button{
+.signup-button {
 background-color: black; 
 color: white; 
 border: none;
