@@ -79,21 +79,21 @@ width: 100vw; /* Takes up the full width of the viewport */
 
 .newsletter-text{
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   margin-top: -30px;
   font-weight: bold;
 }
   
 .email-field{
   width: 400px;
-  height: 80px;
+  height: 100px;
 }
 
 .signup-button{
 background-color: black; 
 color: white; 
 border: none;
-  font-size: 16px;
+  font-size: 25px;
 padding: 10px 20px;
 }
 
