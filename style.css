@@ -9,7 +9,7 @@
   clear: both;
 }
 .specific-image {
-  margin-bottom: -20px;
+  max-height: calc(100% - 20px);
 }
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
