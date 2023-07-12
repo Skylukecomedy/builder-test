@@ -1,5 +1,4 @@
 .image-row {
-  display: flex;
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
 }
