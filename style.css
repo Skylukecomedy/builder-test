@@ -12,6 +12,7 @@
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
+  margin-top: -10px;
 }
 .image5 {
   width: 100vw; /* Takes up the full width of the viewport */
