@@ -8,9 +8,7 @@
   display: table;
   clear: both;
 }
-.specific-image {
-  max-height: calc(100% - 60px) !important;
-}
+
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
