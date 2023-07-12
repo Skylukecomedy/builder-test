@@ -41,7 +41,7 @@ function closeFullscreen() {
 }
 
 
-const images = document.querySelectorAll('.image1');
+const images = document.querySelectorAll('.col img');
 const overlays = document.querySelectorAll('.overlay');
 
 for (let i = 0; i < images.length; i++) {
