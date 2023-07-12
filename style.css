@@ -8,6 +8,9 @@
   display: table;
   clear: both;
 }
+.specific-image {
+  margin-bottom: -20px;
+}
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
