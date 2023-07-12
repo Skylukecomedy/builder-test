@@ -1,10 +1,15 @@
-.image-row {
-  display: flex;
+.image1 {
+  width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
-  
 }
-.image-row img{
-  width: calc(33.33% -10px);
+
+.image2 {
+  width: 100vw; /* Takes up the full width of the viewport */
+  height: auto;
+}
+
+.image3 {
+  width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
 }
 .image4 {
