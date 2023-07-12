@@ -1,16 +1,12 @@
-.image1 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
-
-.image2 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
-}
-
-.image3 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
