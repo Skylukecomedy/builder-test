@@ -12,23 +12,16 @@
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
-  margin-top: 0px;
+  margin-top: -1px;
+  margin-right: -10px;
 }
-.image5 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
-}
-.image6 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
-}
-.image7 {
-  width: 100vw; /* Takes up the full width of the viewport */
-  height: auto;
-}
+
+
 .image8 {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
+  margin-right: -10px;
+  margin-top: -1px;
 }
 
 
