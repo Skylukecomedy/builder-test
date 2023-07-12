@@ -1,6 +1,6 @@
 .image-row {
   display: flex;
-
+}
 .image4 {
   width: 100vw; /* Takes up the full width of the viewport */
   height: auto;
