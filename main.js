@@ -40,3 +40,35 @@ function closeFullscreen() {
   fullscreenContainer.style.display = "none";
 }
 
+
+const images = document.querySelectorAll('.image1');
+const overlays = document.querySelectorAll('.overlay');
+
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener('click', enlargeImage.bind(null, i));
+}
+
+function enlargeImage(index) {
+  overlays[index].style.opacity = '1';
+  document.body.style.overflow = 'hidden'; // Prevent scrolling on the page
+
+  const enlargedImage = document.createElement('img');
+  enlargedImage.src = images[index].src;
+  enlargedImage.className = 'enlarged-image';
+
+  document.body.appendChild(enlargedImage);
+
+  enlargedImage.addEventListener('click', shrinkImage);
+}
+
+function shrinkImage() {
+  for (let i = 0; i < overlays.length; i++) {
+    overlays[i].style.opacity = '0';
+  }
+  document.body.style.overflow = 'auto'; // Enable scrolling on the page
+
+  const enlargedImage = document.querySelector('.enlarged-image');
+  enlargedImage.parentNode.removeChild(enlargedImage);
+}
+
+
