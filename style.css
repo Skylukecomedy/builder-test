@@ -89,6 +89,17 @@ font-family: Helvetica, Arial, sans-serif;
   margin-right: auto;
   text-align: center;
 }
+.photos-top {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 .terms-top {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 30px;
