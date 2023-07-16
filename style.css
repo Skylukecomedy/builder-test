@@ -91,7 +91,7 @@ font-family: Helvetica, Arial, sans-serif;
 }
 .dad-top {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 100px;
@@ -99,6 +99,7 @@ font-family: Helvetica, Arial, sans-serif;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: red;
 }
 .photos-top {
   font-family: Helvetica, Arial, sans-serif;
