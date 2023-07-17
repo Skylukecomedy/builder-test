@@ -514,7 +514,16 @@ body {
   .hidden {
     display: none;
   }
-  
+  /* Tablet */
+@media all and (max-width: 1024px) {
+  .nav-toggle {
+    display: block;
+    position: relative;
+    top: initial;
+    right: initial;
+    margin-left: auto;
+  }
+}
   
   /* Mobile */
   @media all and (max-width: 720px) {
