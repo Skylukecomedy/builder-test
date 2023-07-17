@@ -49,14 +49,14 @@ input[type="email"] {
 input[type="submit"] {
   width: auto;
   height: auto;
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 0 !important;
   cursor: pointer;
   font-family: Arial, sans-serif; /* Change the font family as desired */
-  font-size: 14px; /* Change the font size as desired */
+  font-size: 10px; /* Change the font size as desired */
 }
 
 input[type="submit"]:hover {
@@ -180,8 +180,8 @@ font-size: 22px;
 background-color: black; 
 color: white; 
 border: none;
-  font-size: 25px;
-padding: 10px 20px;
+  font-size: 18px;
+padding: 8px 16px;
 }
 
 .contact-email {
