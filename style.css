@@ -368,7 +368,7 @@ font-size: 22px;
 
 
 .colorful-text {
-        position: fixed;
+        position: sticky;
         top: 15px; /* Adjust the top value to move the text vertically */
         left: 100px; /* Adjust the left value to move the text horizontally */
         font-size: 40px; /* Adjust the font size as desired */
