@@ -487,7 +487,7 @@ body {
   .nav-toggle {
     display: none;
     position: absolute;
-    right: 21rem;
+    left: 6rem;
     top: 4rem;
     cursor: pointer;
     z-index: 3;
@@ -518,10 +518,11 @@ body {
 @media all and (max-width: 1024px) {
   .nav-toggle {
     display: block;
-    position: relative;
-    top: initial;
-    right: initial;
-    margin-left: auto;
+    position: fixed;
+    left: 5rem;
+    top: 5rem;
+    cursor: pointer;
+    z-index: 3;
   }
 }
   
