@@ -519,8 +519,8 @@ body {
   .nav-toggle {
     display: block;
     position: fixed;
-    left: 5rem;
-    top: 2rem;
+    left: 1rem;
+    top: 1rem;
     cursor: pointer;
     z-index: 3;
   }
