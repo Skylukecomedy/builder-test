@@ -485,7 +485,7 @@ body {
   .nav-toggle {
     display: none;
     position: absolute;
-    right: 25rem;
+    right: 10rem;
     top: 4rem;
     cursor: pointer;
     z-index: 3;
