@@ -40,8 +40,8 @@ label {
 }
 
 input[type="email"] {
-  width: 320px; /* Adjust the width as needed */
-  height: 40px;
+  width: 250px; /* Adjust the width as needed */
+  height: 30px;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -56,7 +56,7 @@ input[type="submit"] {
   border-radius: 0 !important;
   cursor: pointer;
   font-family: Arial, sans-serif; /* Change the font family as desired */
-  font-size: 16px; /* Change the font size as desired */
+  font-size: 14px; /* Change the font size as desired */
 }
 
 input[type="submit"]:hover {
