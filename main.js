@@ -9,8 +9,13 @@ navToggle.addEventListener("click", () => {
   navIcon.forEach((icon) => {
     icon.classList.toggle("hidden");
   });
-});
 
+  // Scroll the webpage to the top
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
 
 window.addEventListener(
   "resize", () => {
@@ -24,4 +29,3 @@ window.addEventListener(
   },
   { passive: false }
 );
-
