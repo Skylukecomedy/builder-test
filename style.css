@@ -290,9 +290,17 @@ width: 100vw; /* Takes up the full width of the viewport */
  display: flex;
   flex-direction: column;
   align-items: center;
-  
-
-}
+  }
+.shows {
+  background-color: #0000FF; /* Replace with desired background color */
+  padding: 0px;
+  position: relative;
+   height: 1000px; /* Adjust the height of the colored section as needed */
+  margin-top: 90px; /* Adjust this value to remove the space */
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
 
 
 
