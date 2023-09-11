@@ -31,6 +31,17 @@ padding: 8px 16px;
   border: 2px solid red;
   margin-top: 0px;
 }
+.divider-container {
+    width: 70%; /* Adjust the width of the container as needed */
+    margin: 0 auto; /* Center the container if desired */
+}
+
+.divider {
+    border: none;
+    background-color: white;
+    height: 2px; /* Adjust the height of the divider as needed */
+    width: 100%; /* This will make the divider span the width of the container */
+}
 
 .white-box {
   position: fixed;
