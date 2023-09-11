@@ -9,13 +9,14 @@
   align-items: center;
   }
 .showdate {
+  align: left;
  color: white;
-font-size: 22px;
+font-size: 18px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 .showdate1name {
  color: white;
-font-size: 24px;
+font-size: 22px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 .tickets-button {
