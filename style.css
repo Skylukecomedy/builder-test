@@ -203,7 +203,7 @@ font-family: Helvetica, Arial, sans-serif;
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -306,7 +306,7 @@ font-size: 22px;
   height: auto;
      margin-top: 30px; /* Adjust the top margin value to move the image down */
      margin-left: 0px; /* Adjust the left margin value to move the image to the right */  
-
+    margin-bottom: -10px;
 }
 .bio-image {
   width: 100vw; /* Takes up the full width of the viewport */
