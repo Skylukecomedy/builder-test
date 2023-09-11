@@ -15,25 +15,14 @@ menu_items.forEach(item => {
 })
 
 function show() {
+    mainMenu.style.top = `${window.scrollY}px`; // Set the top position to current scrollY
     mainMenu.style.display = 'flex';
-    mainMenu.style.position = 'fixed';
-    mainMenu.style.top = '0';
-    mainMenu.style.left = '0';
-    mainMenu.style.right = '0';
-    mainMenu.style.bottom = '0';
 }
 
 function close() {
-    mainMenu.style.position = 'initial'; // Reset the position
-    mainMenu.style.display = 'none';
+    mainMenu.style.top = `${window.scrollY}px`; // Set the top position to current scrollY
     openMenu.style.display = 'block'; // Show the hamburger button
     closeMenu.style.display = 'none'; // Hide the close button
     location.reload();
 }
 
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Smooth scroll to top
-    });
-}
