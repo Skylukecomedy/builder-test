@@ -9,14 +9,14 @@
   
   }
 .showdate {
-  margin-right: 10px;
+  margin-left: -10px;
  text-align: left;
  color: white;
 font-size: 18px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 .showdate1name {
-  margin-right: 10px;
+  margin-left: -10px;
   text-align: left;
  color: white;
 font-size: 22px;
