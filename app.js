@@ -14,6 +14,7 @@ menu_items.forEach(item => {
     item.addEventListener('click',function(event){
        event.preventDefault();
         close();
+        scrollToTop();
     })
 })
 
@@ -28,4 +29,9 @@ function close(){
     location.reload();
 }
     
-
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll to top
+    });
+}
