@@ -31,7 +31,7 @@ function close(){
     
 function scrollToTop() {
     window.scrollTo({
-        top: -1000,
+        top: 0,
         behavior: 'smooth' // Smooth scroll to top
     });
 }
