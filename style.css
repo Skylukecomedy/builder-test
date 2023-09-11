@@ -314,9 +314,11 @@ font-size: 22px;
 .tickets-button {
 background-color: black; 
 color: white; 
-border: none;
   font-size: 22px;
 padding: 8px 16px;
+  border: 2px solid red;
+  
+
   
 }
 
