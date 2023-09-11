@@ -541,13 +541,13 @@ body {
     left: 6rem;
     top: 4rem;
     cursor: pointer;
-    z-index: 3;
+    z-index: 99;
   }
   
   .nav-toggle img {
     width: 1.5rem;
     transition: 300ms all ease;
-    z-index: 3;
+    z-index: 99;
     
   }
   
@@ -573,7 +573,7 @@ body {
     left: 1.8rem;
     top: 3.8rem;
     cursor: pointer;
-    z-index: 3;
+    z-index: 99;
   }
 }
   
@@ -593,7 +593,7 @@ body {
       width: 100%;
       overflow: hidden;
       transition: 250ms height ease-in-out;
-    z-index: 3;
+    z-index: 99;
     }
 
     .colored-section li {
@@ -614,7 +614,7 @@ body {
   
     .nav-toggle {
       display: block;
-      z-index: 3;
+      z-index: 99;
       
     }
   
