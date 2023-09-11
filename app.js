@@ -18,9 +18,10 @@ menu_items.forEach(item => {
     })
 })
 
-function show(){
+function show() {
+    const scrollY = window.scrollY;
+    mainMenu.style.top = `${scrollY}px`;
     mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
 }
 function close(){
     mainMenu.style.top = '-100%';
