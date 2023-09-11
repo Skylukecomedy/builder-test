@@ -510,7 +510,7 @@ body {
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 1rem;
-    z-index: 99;
+    z-index: 10;
   }
   
   ul {
