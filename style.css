@@ -558,10 +558,12 @@ body {
   }
   
   .open {
-    height: 100vh;
-    position: fixed;
-    z-index: 1000;
-    background-color: white;
+    top: 0;
+  left: 0;
+  width: 100%; /* Set the width to 100% */
+  background-color: white; /* Set the background color to white */
+  z-index: 100;
+  display: none;
   }
   
   .hidden {
