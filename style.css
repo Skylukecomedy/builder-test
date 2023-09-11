@@ -537,7 +537,7 @@ body {
   
   .nav-toggle {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 6rem;
     top: 4rem;
     cursor: pointer;
@@ -569,7 +569,7 @@ body {
 @media all and (max-width: 1024px) {
   .nav-toggle {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 1.8rem;
     top: 3.8rem;
     cursor: pointer;
