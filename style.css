@@ -291,7 +291,7 @@ width: 100vw; /* Takes up the full width of the viewport */
   flex-direction: column;
   align-items: center;
   }
-.shows {
+.colored-section2 {
   background-color: #0000FF; /* Replace with desired background color */
   padding: 0px;
   position: relative;
