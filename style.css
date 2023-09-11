@@ -570,7 +570,7 @@ body {
   .nav-toggle {
     display: block;
     position: fixed;
-    left: 1.5rem;
+    left: 1.8rem;
     top: 3.8rem;
     cursor: pointer;
     z-index: 3;
