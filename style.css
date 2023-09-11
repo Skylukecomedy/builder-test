@@ -9,17 +9,19 @@
   align-items: center;
   }
 .showdate {
-  align: left;
+ text-align: left;
  color: white;
 font-size: 18px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 .showdate1name {
+  text-align: left;
  color: white;
 font-size: 22px;
   margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 .tickets-button {
+  text-align: left;
 background-color: black; 
 color: white; 
   font-size: 25px;
