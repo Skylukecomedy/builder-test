@@ -3,7 +3,7 @@
   padding: 0px;
   position: relative;
    height: 650px; /* Adjust the height of the colored section as needed */
-  margin-top: 20px; /* Adjust this value to remove the space */
+  margin-top: 0px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
   
