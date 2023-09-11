@@ -2,26 +2,26 @@
   background-color: #0000FF; /* Replace with desired background color */
   padding: 0px;
   position: relative;
-   height: 1000px; /* Adjust the height of the colored section as needed */
-  margin-top: 90px; /* Adjust this value to remove the space */
+   height: 500px; /* Adjust the height of the colored section as needed */
+  margin-top: 50px; /* Adjust this value to remove the space */
  display: flex;
   flex-direction: column;
   align-items: center;
   }
 .showdate {
  color: white;
-font-size: 18px;
+font-size: 22px;
   margin-top: -50px; !important; /* Adjust the margin-top value as needed */
 }
 .showdate1name {
  color: white;
-font-size: 22px;
+font-size: 24px;
   margin-top: -50px; !important; /* Adjust the margin-top value as needed */
 }
 .tickets-button {
 background-color: black; 
 color: white; 
-  font-size: 22px;
+  font-size: 25px;
 padding: 8px 16px;
   border: 2px solid red;
   margin-top: -50px;
