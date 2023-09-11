@@ -11,12 +11,12 @@
 .showdate {
  color: white;
 font-size: 22px;
-  margin-top: -50px; !important; /* Adjust the margin-top value as needed */
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 .showdate1name {
  color: white;
 font-size: 24px;
-  margin-top: -50px; !important; /* Adjust the margin-top value as needed */
+  margin-top: 0px; !important; /* Adjust the margin-top value as needed */
 }
 .tickets-button {
 background-color: black; 
@@ -24,7 +24,7 @@ color: white;
   font-size: 25px;
 padding: 8px 16px;
   border: 2px solid red;
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 .white-box {
