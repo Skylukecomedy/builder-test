@@ -30,9 +30,8 @@ function close(){
 }
     
 function scrollToTop() {
-    const menuPosition = mainMenu.getBoundingClientRect().top;
     window.scrollTo({
-        top: menuPosition,
-        behavior: 'smooth'
+        top: 0,
+        behavior: 'smooth' // Smooth scroll to top
     });
 }
